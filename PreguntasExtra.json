@@ -1,0 +1,2870 @@
+{
+    "bloques_inesperados": {
+      "trimestre_1": [
+        {
+          "id": 1,
+          "titulo": "Pantalla de Telefono Rota",
+          "texto": "Inesperado! Tu telefono cae al suelo y la pantalla queda inutilizable. Necesitas comunicacion para las alertas de la oficina. Compras el ultimo modelo a cuotas o reparas la pantalla del actual?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar ultimo modelo a cuotas.",
+              "efectos": {
+                "Finanzas": -20,
+                "Perfil": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Reparar la pantalla del actual.",
+              "efectos": {
+                "Finanzas": -8,
+                "Salud": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Tuberia Rota en el Apartamento",
+          "texto": "Inesperado! Se rompe una tuberia en tu baño y el agua daña parte del piso. El dueño exige reparacion inmediata. Pagas la reparacion de tu bolsillo hoy mismo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la reparacion de inmediato.",
+              "efectos": {
+                "Finanzas": -20,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Discutir legalmente con el propietario.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -15,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Apagon y Alimentos Perdidos",
+          "texto": "Inesperado! Un corte de energia prolongado en tu zona daño los alimentos que tenias en la nevera para toda la semana. Repones todo el mercado hoy mismo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Reponer todo el mercado.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Comer lo basico y ajustar porciones.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -12
+              }
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "titulo": "Falla de Software en Entrega",
+          "texto": "Inesperado! Tu equipo de trabajo presenta una falla grave de software justo antes de enviar la entrega trimestral. Pagas una licencia tecnica de urgencia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Costear la licencia tecnica.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 12
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Intentar arreglarlo manual retrasando el reporte.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -18,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "titulo": "Aumento Tarifario de Transporte",
+          "texto": "Inesperado! Un incremento en la tarifa del transporte publico o combustible eleva tus costos diarios. Ajustas tu presupuesto recortando ocio?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Recortar presupuesto de ocio.",
+              "efectos": {
+                "Finanzas": 10,
+                "Social": -12,
+                "Salud": -5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Mantener tus salidas usando la tarjeta.",
+              "efectos": {
+                "Finanzas": -15,
+                "Social": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "titulo": "Dolor Molar Agudo",
+          "texto": "Inesperado! Un dolor de muela agudo requiere consulta odontologica de urgencia fuera del seguro. Pagas la atencion medica inmediata?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar consulta y tratamiento.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 15
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Tomar analgesicos y posponer la cita.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -20,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "titulo": "Ajuste de Condominio Extraordinario",
+          "texto": "Inesperado! El casero te notifica un cuota extraordinaria por reparaciones estructurales del inmueble. Pagas la cuota requerida?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la cuota de inmediato.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": -5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Negociar un plazo de pago.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -12
+              }
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "titulo": "Inspeccion Medica Sorpresa",
+          "texto": "Inesperado! Una inspeccion del ministerio exige renovar tu carnet de salud de forma particular esta semana. Pagas el tramite express?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar el tramite express.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Buscar una opcion publica mas lenta.",
+              "efectos": {
+                "Finanzas": 5,
+                "Perfil": -12,
+                "Salud": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "titulo": "Cargador de Computadora Quemado",
+          "texto": "Inesperado! Una falla electrica quema el cargador de tu computadora la noche antes de una entrega. Pagas un repuesto original con envio nocturno?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar repuesto con envio nocturno.",
+              "efectos": {
+                "Finanzas": -20,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar a mañana y pedir uno prestado.",
+              "efectos": {
+                "Finanzas": 5,
+                "Perfil": -15,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "titulo": "Multa por Tramite Tardio",
+          "texto": "Inesperado! Te llega una notificacion de multa por no actualizar tus datos impositivos a tiempo. Pagas con descuento de pago anticipado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la multa de contado.",
+              "efectos": {
+                "Finanzas": -12,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Apelar la sancion retrasando el pago.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -12
+              }
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "titulo": "Gotera sobre Documentos de Trabajo",
+          "texto": "Inesperado! Una filtracion nocturna moja tus expedientes impresos de la oficina. Pagas una reimpresion de urgencia en una imprenta 24 horas?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Reimprimir de urgencia en imprenta 24 horas.",
+              "efectos": {
+                "Finanzas": -12,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Secar las hojas y presentarlas arrugadas.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -15,
+                "Salud": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "titulo": "Hurto de Billetera en Transporte",
+          "texto": "Inesperado! Sufres la perdida de tu billetera con tarjetas y documentos. Pagas el duplicado urgente de tus identificaciones?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar el duplicado urgente de documentos.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": -5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Hacer el tramite normal que tarda semanas.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -15,
+                "Perfil": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "titulo": "Cierre de Via de Acceso",
+          "texto": "Inesperado! Una obra en la via principal bloquea el transporte habitual. Pagas un servicio de taxi privado para no llegar tarde a la reunion directiva?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar el taxi privado express.",
+              "efectos": {
+                "Finanzas": -10,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Ir en transporte alternativo e ingresar tarde.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -12,
+                "Salud": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "titulo": "Daño en la Cerrajería de Casa",
+          "texto": "Inesperado! La llave se rompe dentro de la cerradura al salir hacia el trabajo. Contratas un cerrajero de emergencia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Contratar cerrajero de emergencia.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Intentar forzar la puerta dañando la estructura.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -12,
+                "Perfil": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "titulo": "Error de Cobro Duplicado",
+          "texto": "Inesperado! El banco cobra por error dos veces la factura de un servicio y la devolucion tardara diez dias. Usas tu fondo de reserva para cubrir la semana?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Usar el fondo de reserva temporalmente.",
+              "efectos": {
+                "Finanzas": -10,
+                "Salud": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar el saldo de la tarjeta de credito.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "titulo": "Medicamento Fuera de Cobertura",
+          "texto": "Inesperado! Un familiar cercano enferma de gripe severa y los medicamentos requeridos no los cubre el seguro basico. Compras la receta completa?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar la receta de contado.",
+              "efectos": {
+                "Finanzas": -15,
+                "Social": 15,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Buscar genéricos sustitutos de menor eficacia.",
+              "efectos": {
+                "Finanzas": -5,
+                "Social": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "titulo": "Pérdida de Lentes de Contacto o Gafas",
+          "texto": "Inesperado! Rompes tus gafas de vista principal y no puedes trabajar frente a la pantalla sin ellas. Pagas la elaboracion express de cristales?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar elaboracion express de cristales.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 10,
+                "Salud": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Trabajar forzando la vista con un par antiguo.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -10,
+                "Salud": -18
+              }
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "titulo": "Inundación Menor en Cocina",
+          "texto": "Inesperado! El manguito de la lavadora cede y requiere contratacion de plomero e insumos de limpieza. Pagas los servicios de plomería?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar servicios de plomeria de inmediato.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Limpiar tu mismo perdiendo horas de descanso.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -15,
+                "Social": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "titulo": "Daño de Maletin / Mochila de Trabajo",
+          "texto": "Inesperado! La cremallera de tu maletin de trabajo se rompe dejando expuestos tus equipos. Compras un reemplazo ejecutivo de contado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar reemplazo ejecutivo de contado.",
+              "efectos": {
+                "Finanzas": -12,
+                "Perfil": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar una bolsa improvisada temporal.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -10,
+                "Social": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "titulo": "Requisito de Certificado Digital",
+          "texto": "Inesperado! El regulador exige la compra de una firma digital token para enviar los reportes del mes. Costeas el token personal de inmediato?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Costear el token digital de inmediato.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 12
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Pedir extension de plazo arriesgando sancion.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "titulo": "Falla de Bateria de Vehiculo",
+          "texto": "Inesperado! La bateria de tu auto o vehiculo falla por completo al salir hacia la oficina. Compras una bateria nueva con auxilio vial?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar bateria nueva con auxilio vial.",
+              "efectos": {
+                "Finanzas": -20,
+                "Perfil": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Dejar el auto y tomar transporte publico.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -8,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "titulo": "Fuga de Gas en Vivienda",
+          "texto": "Inesperado! La empresa de gas detecta una pequeña fuga en la conexion de tu cocina y suspende el servicio hasta que pagues una revision tecnica. Pagas?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la revision tecnica autorizada.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Cocinar con aparatos electricos prestados.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -12
+              }
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "titulo": "Daño por Humedad en Ropa Formal",
+          "texto": "Inesperado! La humedad del armario daña dos camisas formales antes de una presentacion directiva. Compras ropa de reemplazo de urgencia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar ropa de reemplazo de urgencia.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Presentarte con ropa arrugada o informal.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -15,
+                "Social": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "titulo": "Rotura de Pantalla de Tablet de Trabajo",
+          "texto": "Inesperado! La tableta donde muestras presentaciones a clientes sufre una fisura grave. Pagas el cambio de pantalla en la tarde?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar cambio de pantalla el mismo dia.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Presentar desde el telefono movil pequeño.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -12,
+                "Social": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "titulo": "Extravío de Credencial de Oficina",
+          "texto": "Inesperado! Pierdes la tarjeta electronica de acceso a la oficina y RRHH exige el pago inmediato del chip de reemplazo. Pagas la credencial?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar el chip de reemplazo.",
+              "efectos": {
+                "Finanzas": -10,
+                "Perfil": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Pedir que un colega te abra la puerta cada dia.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -12,
+                "Social": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "titulo": "Falla de Impresora en Entrega de Contratos",
+          "texto": "Inesperado! Tu impresora de oficina se traba permanentemente minutos antes de firmar contratos clave. Pagas a un centro de copiado express?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar centro de copiado express.",
+              "efectos": {
+                "Finanzas": -10,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Presentar documentos digitales no autorizados.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -18
+              }
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "titulo": "Daño de Disco Duro Externo de Resguardo",
+          "texto": "Inesperado! Tu disco de respaldos personales deja de funcionar. Pagas a un laboratorio especializado de recuperacion de datos?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar laboratorio de recuperacion.",
+              "efectos": {
+                "Finanzas": -20,
+                "Perfil": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Dar por perdidos los archivos no criticos.",
+              "efectos": {
+                "Finanzas": 0,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "titulo": "Extravío de Maletín con Documentación",
+          "texto": "Inesperado! Olvidas un maletín en un cafe con tus informes impresos. Pagas un servicio de mensajeria express para recuperarlo a tiempo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar mensajeria express de recuperacion.",
+              "efectos": {
+                "Finanzas": -12,
+                "Perfil": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Volver caminando perdiendo dos horas de trabajo.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -12,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "titulo": "Cobro Extraordinario por Registro Profesional",
+          "texto": "Inesperado! El colegio o gremio profesional exige el pago de la cuota anual para mantener tu firma habilitada. Pagas la habilitacion?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la cuota de habilitacion gremial.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 15
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Posponer el pago perdiendo temporalmente firma.",
+              "efectos": {
+                "Finanzas": 5,
+                "Perfil": -20,
+                "Salud": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "titulo": "Sancion por Inconsistencia en Factura",
+          "texto": "Inesperado! Un proveedor te entrego una factura con error RIF/NIT y la agencia tributaria aplica un recargo menor. Pagas el recargo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar el recargo tributario de contado.",
+              "efectos": {
+                "Finanzas": -12,
+                "Perfil": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Exigir al proveedor que asuma la multa retrasando el reporte.",
+              "efectos": {
+                "Finanzas": 5,
+                "Perfil": -10,
+                "Social": -8
+              }
+            }
+          ]
+        }
+      ],
+      "trimestre_2": [
+        {
+          "id": 31,
+          "titulo": "Reembolso Impositivo Inesperado",
+          "texto": "Inesperado! Recibes un reembolso impositivo del gobierno no planificado de 300 dolares. Gastas el dinero en compras personales por sentir que es regalo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Gastar el dinero en compras de ocio.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Integrarlo a tu fondo de emergencia.",
+              "efectos": {
+                "Finanzas": 18,
+                "Salud": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "titulo": "Falla en Sistema Eléctrico Doméstico",
+          "texto": "Inesperado! Una sobretensión quema la tarjeta grafica o fuente de dos electrodomesticos. Usas tu nueva Tarjeta Platino para reponerlos?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar a cuotas con tarjeta Platino.",
+              "efectos": {
+                "Finanzas": -20,
+                "Salud": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Reparar o comprar usados de contado.",
+              "efectos": {
+                "Finanzas": -8,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "titulo": "Averia Mecánica Mayor",
+          "texto": "Inesperado! Tu medio de transporte habitual sufre una falla de motor. Pagas la reparacion total usando la tarjeta de credito?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Reparar con tarjeta de credito.",
+              "efectos": {
+                "Finanzas": -22,
+                "Perfil": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar transporte alternativo muy lento.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -12,
+                "Perfil": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "titulo": "Rotura de Nevera o Lavadora",
+          "texto": "Inesperado! Un electrodomestico basico sufre una averia total irreparable. Pagas un reemplazo de contado usando tus ahorros?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar reemplazo de contado con ahorros.",
+              "efectos": {
+                "Finanzas": -22,
+                "Salud": 12
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Comprar un equipo usado de baja eficiencia.",
+              "efectos": {
+                "Finanzas": -8,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "titulo": "Notificación de Multa de Tránsito",
+          "texto": "Inesperado! Te llega una sancion administrativa por exceso de velocidad o parqueo. Pagas con descuento de pago anticipado usando la tarjeta?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar de inmediato con tarjeta.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": -5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Impugnar la sancion retrasando el pago.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -15,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "titulo": "Caida del Proveedor de Internet",
+          "texto": "Inesperado! Tu internet domestico colapsa durante una entrega critica y debes comprar un paquete de datos ilimitados corporativo de urgencia. Compras?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar paquete de datos express.",
+              "efectos": {
+                "Finanzas": -12,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar la señal arriesgando la entrega.",
+              "efectos": {
+                "Finanzas": 5,
+                "Perfil": -18,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "titulo": "Accidente Menor de Trabajo",
+          "texto": "Inesperado! Un tropezon en las escaleras te produce un esguince leve. Pagas terapias fisicas privadas para recuperarte mas rapido?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar terapias fisicas privadas.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 18,
+                "Perfil": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar la cita del seguro publico.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -15,
+                "Perfil": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "titulo": "Filtración de Techo por Lluvia",
+          "texto": "Inesperado! Las lluvias generan una filtracion directa sobre tu cama o escritorio. Contratas impermeabilizacion de urgencia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Contratar impermeabilizacion urgente.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Colocar baldes y posponer la reparacion.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -18,
+                "Social": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "titulo": "Aumento de Tarifa de Alquiler",
+          "texto": "Inesperado! El propietario exige un reajuste de contrato no previsto argumentando inflacion. Aceptas el incremento para no mudarte?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Aceptar el reajuste del alquiler.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Buscar una mudanza de emergencia mas barata.",
+              "efectos": {
+                "Finanzas": -10,
+                "Salud": -15,
+                "Social": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "titulo": "Plaga Doméstica Repentina",
+          "texto": "Inesperado! Se detecta una plaga en el edificio que exige fumigacion profesional de tu departamento. Pagas el servicio de pest control?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar fumigacion profesional.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 12
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar insecticidas caseros ineficaces.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "titulo": "Cobro Judicial por Impuesto de Inmueble",
+          "texto": "Inesperado! Un error administrativo del municipio genera una notificacion de cobro retroactivo de tasas. Pagas para evitar recargos?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar el cobro retroactivo municipal.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Iniciar reclamo presencial en alcaldia.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -15,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "titulo": "Robo de Espejos de Auto",
+          "texto": "Inesperado! Te roban los espejos laterales de tu auto en el estacionamiento. Compras los repuestos originales con instalacion segura?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar repuestos originales instalados.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 5,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Comprar repuestos usados de dudosa procedencia.",
+              "efectos": {
+                "Finanzas": -8,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "titulo": "Rotura de Tubería de Agua Caliente",
+          "texto": "Inesperado! El calentador de agua colapsa dejando sin servicio tu apartamento. Compras un calentador nuevo de bajo consumo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar calentador nuevo eficiente.",
+              "efectos": {
+                "Finanzas": -20,
+                "Salud": 15
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Bañarte con agua fria durante un mes.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -18
+              }
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "titulo": "Falla de Aire Acondicionado en Ola de Calor",
+          "texto": "Inesperado! Tu sistema de climatizacion se daña durante la semana mas calurosa del año. Pagas el servicio tecnico urgente?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar servicio tecnico urgente.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 15
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar ventiladores pequeños ruidosos.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -15,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "titulo": "Extravío de Maleta en Viaje Corto",
+          "texto": "Inesperado! Durante un viaje de trabajo corto la aerolinea pierde tu equipaje con tu traje formal. Compras ropa de reemplazo de urgencia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar ropa formal de urgencia.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar la ropa informal que llevas puesta.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -18,
+                "Social": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "titulo": "Gastos Sanitarios de Mascota",
+          "texto": "Inesperado! Tu mascota sufre una indigestión severa y requiere atencion veterinaria de urgencia. Cubres los estudios y medicinas de contado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar veterinario y medicinas de contado.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 15,
+                "Social": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Pedir un tratamiento basico casero.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -12
+              }
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "titulo": "Cobro Extraordinario por Basura Municipal",
+          "texto": "Inesperado! La gobernacion aplica una tasa por manejo de desechos no notificada previamente. Pagas de inmediato?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la tasa de desechos.",
+              "efectos": {
+                "Finanzas": -10,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Unirte a una protesta de vecinos y no pagar.",
+              "efectos": {
+                "Finanzas": 5,
+                "Social": 5,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "titulo": "Falla de Batería de Laptop Personal",
+          "texto": "Inesperado! La bateria de tu laptop personal donde guardas tus finanzas se infla y requiere reemplazo. Compras una bateria original?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar bateria original.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 5,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usarla conectada a la corriente todo el tiempo.",
+              "efectos": {
+                "Finanzas": 0,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "titulo": "Daño en Calzado Ejecutivo Principal",
+          "texto": "Inesperado! La suela de tus zapatos ejecutivos principales cede minutos antes de una reunion. Compras calzado nuevo en el centro comercial cercano?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar calzado ejecutivo nuevo.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Pegar la suela de forma improvisada.",
+              "efectos": {
+                "Finanzas": -5,
+                "Perfil": -12,
+                "Social": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "titulo": "Pérdida de Vuelo de Conexión",
+          "texto": "Inesperado! Pierdes el transporte de regreso de un viaje de trabajo por retraso personal. Pagas el penalizo de reemision de billete?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar penalizo de reemision.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar doce horas el siguiente transporte economico.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -18,
+                "Perfil": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "titulo": "Daño por Gotera de Vecino Superior",
+          "texto": "Inesperado! Una fuga del piso de arriba daña la pintura de tu techo. Pagas el arreglo urgente mientras el vecino tramita el reembolso?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Costear el arreglo urgente y pedir reembolso.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 8,
+                "Social": -5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar a que el vecino pague directo.",
+              "efectos": {
+                "Finanzas": 0,
+                "Salud": -15,
+                "Social": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "titulo": "Estafa en Compra de Insumos en Línea",
+          "texto": "Inesperado! Compras un insumo de trabajo en una pagina web falsa y no recibes el producto. Asumes la perdida y compras en distribuidor oficial?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar en distribuidor oficial asumiendo la perdida.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Denunciar y posponer la compra sin trabajar.",
+              "efectos": {
+                "Finanzas": -5,
+                "Perfil": -15,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "titulo": "Incremento en Seguro de Salud Privado",
+          "texto": "Inesperado! La aseguradora notifica una prima de ajuste anual por edad del 20 por ciento. Pagas el reajuste para mantener la cobertura?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la prima ajustada para mantener cobertura.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 15
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Bajar a un plan basico de menor cobertura.",
+              "efectos": {
+                "Finanzas": 10,
+                "Salud": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": 54,
+          "titulo": "Rompimiento de Tubería Externa de Condominio",
+          "texto": "Inesperado! La bomba de agua del edificio colapsa y exige una derrama economica inmediata por departamento. Pagas tu cuota?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la cuota extraordinaria de la bomba.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 8,
+                "Social": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Negarte a pagar acumulando deuda vecinal.",
+              "efectos": {
+                "Finanzas": 5,
+                "Social": -18,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "titulo": "Daño por Rayo en Sistema de Internet",
+          "texto": "Inesperado! Una tormenta quema el módem o router de tu vivienda. Compras un equipo neutro de alta velocidad de contado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar router de alta velocidad de contado.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 5,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar la reposicion gratuita de la compañia en dos semanas.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -15,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "titulo": "Necesidad de Repuesto Mecánico Importado",
+          "texto": "Inesperado! Tu vehiculo requiere una pieza importada sin stock local. Pagas el envio aereo express con impuestos?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar envio aereo express con impuestos.",
+              "efectos": {
+                "Finanzas": -22,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Dejar el auto en taller un mes hasta envio maritimo.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -15,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 57,
+          "titulo": "Daño por Caída de Objeto sobre Cristal de Auto",
+          "texto": "Inesperado! Una piedra fisura el parabrisas de tu auto en la carretera. Pagas el cambio de cristal de seguridad de contado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar cambio de cristal de seguridad de contado.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Conducir con el cristal fisurado arriesgando multa.",
+              "efectos": {
+                "Finanzas": 0,
+                "Salud": -12,
+                "Perfil": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "titulo": "Falla de Calentador de Agua en Invierno",
+          "texto": "Inesperado! El termostato del agua caliente se quema durante una semana helada. Pagas el repuesto tecnico urgente?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar repuesto tecnico urgente.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 15
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Bañarte calentando agua en ollas.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -18,
+                "Social": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "titulo": "Pérdida de Tarjeta de Débito Principal",
+          "texto": "Inesperado! El cajero automatico retiene tu tarjeta de debito durante un fin de semana largo. Pagas un duplicado express en agencia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar duplicado express en agencia.",
+              "efectos": {
+                "Finanzas": -10,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar al tramite regular de diez dias.",
+              "efectos": {
+                "Finanzas": 0,
+                "Salud": -12,
+                "Social": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "titulo": "Aumento Inesperado de Membresía Profesional",
+          "texto": "Inesperado! Tu asociacion de ejecutivos eleva la cuota anual para mantener tu membresia activa. Pagas el ajuste?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar el ajuste de membresia ejecutiva.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 10,
+                "Social": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Darte de baja de la asociacion.",
+              "efectos": {
+                "Finanzas": 10,
+                "Perfil": -10,
+                "Social": -10
+              }
+            }
+          ]
+        }
+      ],
+      "trimestre_3": [
+        {
+          "id": 61,
+          "titulo": "Golpe de Inflación o Devaluación",
+          "texto": "Inesperado! Una variacion cambiaria eleva un 15 por ciento el costo de tus gastos fijos mensuales. Recortas ocio de inmediato?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Recortar gastos de ocio inmediatamente.",
+              "efectos": {
+                "Finanzas": 12,
+                "Social": -10,
+                "Salud": -5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Absorber el incremento usando la tarjeta.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": 62,
+          "titulo": "Ciberataque a Servicio en la Nube",
+          "texto": "Inesperado! La plataforma donde guardas tus archivos sufre un ataque y debes pagar un servicio privado de proteccion de datos. Lo contratas?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar proteccion privada de datos.",
+              "efectos": {
+                "Finanzas": -12,
+                "Perfil": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Confiar en las herramientas gratuitas basica.",
+              "efectos": {
+                "Finanzas": 5,
+                "Perfil": -10,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 63,
+          "titulo": "Correccion de Mercado en Renta Variable",
+          "texto": "Inesperado! Una caida bursatil reduce un 10 por ciento el valor de tus inversiones en acciones. Vendes en perdida o esperas la recuperacion?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Vender consolidando la perdida por pánico.",
+              "efectos": {
+                "Finanzas": -20,
+                "Salud": -10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Mantener y esperar la recuperacion del ciclo.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": 8
+              }
+            }
+          ]
+        },
+        {
+          "id": 64,
+          "titulo": "Fallo de Servidor Local con Trabajo",
+          "texto": "Inesperado! Un fallo de energia daña tus respaldos locales de trabajo y necesitas contratar un servicio forense de datos. Pagas el servicio?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar recuperacion forense de datos.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Rehacer el trabajo desde cero acumulando cansancio.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -18,
+                "Perfil": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 65,
+          "titulo": "Fuga en Sistema de Higienización",
+          "texto": "Inesperado! Un fallo de tuberia contamina un area de tu vivienda y debes contratar higienizacion profesional. Pagas el servicio?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar higienizacion profesional.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Limpiar manualmente perdiendo tu fin de semana.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -15,
+                "Social": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 66,
+          "titulo": "Falla en Fuente de Poder Informática",
+          "texto": "Inesperado! La fuente de poder de tu equipo informatico se quema en la entrega de presupuesto. Pagas un tecnico express a domicilio?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar servicio tecnico express.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Llevarlo a la tienda mañana retrasando el reporte.",
+              "efectos": {
+                "Finanzas": 5,
+                "Perfil": -15,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 67,
+          "titulo": "Cuota Retroactiva de Mantenimiento",
+          "texto": "Inesperado! Un incremento extraordinario en el mantenimiento de tu residencia exige un pago retroactivo. Pagas de contado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar cuota retroactiva de contado.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": -5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Diferir el pago en tres cuotas con intereses.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 68,
+          "titulo": "Falla Mecánica en Radiador de Vehículo",
+          "texto": "Inesperado! El sistema de enfriamiento de tu auto falla en carretera. Pagas el recambio de piezas originales?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar piezas originales de contado.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Comprar repuestos genericos de menor duracion.",
+              "efectos": {
+                "Finanzas": -8,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 69,
+          "titulo": "Reparación de Climatización Doméstica",
+          "texto": "Inesperado! La bomba de frio o calor de tu casa deja de funcionar en una semana de clima extremo. Pagas la reparacion tecnica?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar reparacion tecnica inmediata.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar metodos caseros incomodos.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": 70,
+          "titulo": "Robo de Accesorios de Trabajo",
+          "texto": "Inesperado! Pierdes tus dispositivos de audio o conexion en el transporte publico. Pagas la reposicion de contado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar reposicion de contado.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar la tarjeta de credito a seis cuotas.",
+              "efectos": {
+                "Finanzas": -12,
+                "Salud": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 71,
+          "titulo": "Caida de la Plataforma del Banco",
+          "texto": "Inesperado! El sistema en linea de tu banco principal se congela en la fecha de pago de tu tarjeta. Pagas presencial en taquilla perdiendo la mañana?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Ir a taquilla presencial y pagar a tiempo.",
+              "efectos": {
+                "Finanzas": 10,
+                "Perfil": -8,
+                "Salud": -8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar a que regrese el sistema arriesgando morosidad.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 72,
+          "titulo": "Incremento en Seguro de Salud Privado",
+          "texto": "Inesperado! La aseguradora notifica una prima de ajuste anual por edad del 20 por ciento. Pagas el reajuste para mantener la cobertura?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la prima ajustada para mantener cobertura.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 15
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Bajar a un plan basico de menor cobertura.",
+              "efectos": {
+                "Finanzas": 10,
+                "Salud": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": 73,
+          "titulo": "Rompimiento de Tubería Externa de Condominio",
+          "texto": "Inesperado! La bomba de agua del edificio colapsa y exige una derrama economica inmediata por departamento. Pagas tu cuota?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la cuota extraordinaria de la bomba.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 8,
+                "Social": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Negarte a pagar acumulando deuda vecinal.",
+              "efectos": {
+                "Finanzas": 5,
+                "Social": -18,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 74,
+          "titulo": "Falla de Generador Eléctrico de Residencia",
+          "texto": "Inesperado! El edificio solicita una cuota de emergencia para reparar el generador electrico. Aportas de contado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Aportar la cuota de emergencia del generador.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 10,
+                "Social": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Negarte a aportar y usar escaleras.",
+              "efectos": {
+                "Finanzas": 5,
+                "Social": -15,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 75,
+          "titulo": "Cobro Extraordinario por Ajuste de Auditoría",
+          "texto": "Inesperado! Una revision contable de tus inversiones exige el pago de una tasa de regularizacion. Pagas la tasa de contado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la tasa de regularizacion de contado.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Iniciar proceso de apelacion con abogado.",
+              "efectos": {
+                "Finanzas": -8,
+                "Salud": -15,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 76,
+          "titulo": "Bloqueo de Cuenta por Verificación de Seguridad",
+          "texto": "Inesperado! El banco bloquea temporalmente tus cuentas por actividad inusual y exige tramites presenciales. Pagas un gestor express para agilizar?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar gestor express para liberar cuentas.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Hacer las filas presenciales perdiendo dos dias de trabajo.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -15,
+                "Salud": -12
+              }
+            }
+          ]
+        },
+        {
+          "id": 77,
+          "titulo": "Falla de Filtro de Agua de Vivienda",
+          "texto": "Inesperado! El sistema de purificacion de agua de tu cocina falla y debes comprar cartuchos de repuesto importados. Compras los cartuchos?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar cartuchos de purificacion de contado.",
+              "efectos": {
+                "Finanzas": -12,
+                "Salud": 12
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Comprar agua embotellada diariamente durante un mes.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": 78,
+          "titulo": "Fraude Menor en Tarjeta de Débito",
+          "texto": "Inesperado! Detectas un consumo no reconocido de 80 dolares en tu tarjeta. Pagas el reclamo bancario y seguro de restitucion?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar seguro de restitucion y reclamo.",
+              "efectos": {
+                "Finanzas": -10,
+                "Salud": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Asumir la perdida para no hacer tramites.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 79,
+          "titulo": "Daño de Batería de Auto en Estacionamiento",
+          "texto": "Inesperado! La bateria de tu vehiculo muere por completo durante una reunion de trabajo. Pagas la instalacion express en el sitio?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar instalacion express de bateria.",
+              "efectos": {
+                "Finanzas": -20,
+                "Perfil": 5,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Dejar el auto y pagar taxi de ida y vuelta.",
+              "efectos": {
+                "Finanzas": -10,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 80,
+          "titulo": "Daño por Humedad en Archivos de Inversión",
+          "texto": "Inesperado! Una humedad en tu deposito daña carpetas físicas con contratos de propiedad. Pagas la notarización de duplicados?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar notarizacion de duplicados de contado.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Conservar copias digitales simples no autenticadas.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -12,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 81,
+          "titulo": "Caída de Servidor de Inversiones en Línea",
+          "texto": "Inesperado! La plataforma donde inviertes sufre mantenimiento no notificado durante una ventana de liquidez. Pagas comision por retiro telefonico express?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar comision por retiro telefonico express.",
+              "efectos": {
+                "Finanzas": -12,
+                "Salud": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar a que reabra la web arriesgando variaciones.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 82,
+          "titulo": "Falla de Cerradura de Depósito Personal",
+          "texto": "Inesperado! Se traba el candado o cerradura donde guardas herramientas y activos. Contratas un servicio de apertura tecnica?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Contratar apertura tecnica profesional.",
+              "efectos": {
+                "Finanzas": -12,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Forzar la estructura dañando el porton.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 83,
+          "titulo": "Incremento de Tasa de Mantenimiento de Cuenta",
+          "texto": "Inesperado! El banco eleva las comisiones mensuales por saldo minimo en tu cuenta de inversion. Transfieres fondos para cumplir el minimo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Transferir fondos para evitar la comision.",
+              "efectos": {
+                "Finanzas": -10,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Pagar la comision de penalización mensual.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 84,
+          "titulo": "Daño de Cable de Fibra Óptica Doméstico",
+          "texto": "Inesperado! Un roedor o accidente corta el cable de fibra en tu edificio. Pagas una visita tecnica privada express para reparar?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar visita tecnica privada express.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar la visita del proveedor oficial en una semana.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -18,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 85,
+          "titulo": "Necesidad de Examen Médico de Alta Especialidad",
+          "texto": "Inesperado! Un control de rutina arroja un indicador que requiere un estudio de especialidad no cubierto al 100 por ciento. Pagas el estudio?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar el estudio especializado de contado.",
+              "efectos": {
+                "Finanzas": -20,
+                "Salud": 18
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Posponer el estudio tres meses.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -20,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 86,
+          "titulo": "Pérdida de Llave Codificada de Vehículo",
+          "texto": "Inesperado! Pierdes la unica copia de la llave con chip de tu vehiculo. Pagas la duplicacion y codificacion de urgencia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar duplicacion y codificacion de urgencia.",
+              "efectos": {
+                "Finanzas": -22,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar transporte publico mientras buscas la llave.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -12,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 87,
+          "titulo": "Sanción por Pago Tardío de Gas Doméstico",
+          "texto": "Inesperado! Olvidas la fecha limite del recibo de gas y cortan el servicio. Pagas la reconexion express con recargo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar reconexion express con recargo.",
+              "efectos": {
+                "Finanzas": -12,
+                "Salud": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar reconexion regular de tres dias.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": 88,
+          "titulo": "Falla de Sistema de Seguridad / Alarma",
+          "texto": "Inesperado! La alarma de tu vivienda emite falsas alertas y requiere cambio de bateria central. Pagas el servicio tecnico?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar servicio tecnico de alarma.",
+              "efectos": {
+                "Finanzas": -12,
+                "Salud": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Desconectar la alarma dejando la vivienda expuesta.",
+              "efectos": {
+                "Finanzas": 0,
+                "Salud": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": 89,
+          "titulo": "Rotura de Tubería de Drenaje en Residencia",
+          "texto": "Inesperado! Un colapso en el drenaje principal del edificio exige una cuota urgente por departamento. Pagas la cuota?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la cuota de drenaje urgente.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 8,
+                "Social": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Reclamar a la junta retrasando el pago.",
+              "efectos": {
+                "Finanzas": 5,
+                "Social": -15,
+                "Salud": -12
+              }
+            }
+          ]
+        },
+        {
+          "id": 90,
+          "titulo": "Daño de Pantalla de Laptop Secundario",
+          "texto": "Inesperado! La pantalla de tu equipo secundario de trabajo sufre un golpe en el traslado. Pagas el repuesto en tienda oficial?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar repuesto en tienda oficial.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Trabajar con monitor externo fijo.",
+              "efectos": {
+                "Finanzas": -5,
+                "Perfil": -8,
+                "Salud": -5
+              }
+            }
+          ]
+        }
+      ],
+      "trimestre_4": [
+        {
+          "id": 91,
+          "titulo": "Auditoría Sorpresa del Regulador",
+          "texto": "Inesperado! Una auditoria sorpresa detecta inconsistencias en archivos antiguos no creados por ti. Corriges los archivos el fin de semana?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Liderar la correccion el fin de semana.",
+              "efectos": {
+                "Perfil": 22,
+                "Salud": -15,
+                "Social": -10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Señalar que el archivo pertenecia a un ex-empleado.",
+              "efectos": {
+                "Perfil": -10,
+                "Salud": 8,
+                "Social": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": 92,
+          "titulo": "Falla Crítica de Laptop antes de Entrega Anual",
+          "texto": "Inesperado! Tu equipo de trabajo sufre un fallo critico a tres dias de entregar el plan estrategico. Pagas una reparacion express?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la reparacion express de contado.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 15
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Trabajar en equipos lentos de la oficina.",
+              "efectos": {
+                "Finanzas": 5,
+                "Perfil": -15,
+                "Salud": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": 93,
+          "titulo": "Pérdida o Robo de Equipos Festivos",
+          "texto": "Inesperado! Un robo de pertenencias en tu residencia exige reemplazar identificaciones y herramientas de trabajo. Cubres los gastos de contado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Reemplazar todo de contado con ahorros.",
+              "efectos": {
+                "Finanzas": -20,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Financiar las compras a doce cuotas.",
+              "efectos": {
+                "Finanzas": -12,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 94,
+          "titulo": "Incremento Inesperado de Servicios de Fin de Año",
+          "texto": "Inesperado! Un ajuste extraordinario en tarifas de condominio o servicios de fin de año exige un pago no presupuestado. Pagas la diferencia de inmediato?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la cuota extraordinaria de inmediato.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Refutar la tarifa retrasando el pago.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -12,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 95,
+          "titulo": "Falla de Calefacción o Tubería en Fiestas",
+          "texto": "Inesperado! Una falla en las tuberias de tu vivienda exige una reparacion de emergencia justo antes de las fiestas de fin de año. Pagas el tecnico de guardia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar el servicio de urgencia festivo.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Resolver con parches temporales incomodos.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -18
+              }
+            }
+          ]
+        },
+        {
+          "id": 96,
+          "titulo": "Inconsistencia en la Nomina de Fin de Año",
+          "texto": "Inesperado! Un error contable descuenta por equivocacion un 10 por ciento de tu sueldo de diciembre que se ajustara en enero. Usas tus ahorros para la diferencia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Usar ahorros para cubrir la brecha del mes.",
+              "efectos": {
+                "Finanzas": -10,
+                "Salud": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar la tarjeta de credito para tus compras festivas.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 97,
+          "titulo": "Cobro de Impuesto Municipal Retroactivo",
+          "texto": "Inesperado! La alcaldia exige la actualizacion del impuesto sobre vehiculos o inmuebles antes de cerrar el año fiscal. Pagas la tasa de contado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar el impuesto de contado de inmediato.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Acogerse a un plan de pagos con intereses.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 98,
+          "titulo": "Daño de Porton de Estacionamiento de Casa",
+          "texto": "Inesperado! El motor del porton de tu residencia se quema e impide la salida de tu auto hacia la oficina. Pagas el tecnico de urgencia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar reparacion urgente de porton.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 5,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Dejar el auto guardado y tomar taxi privado.",
+              "efectos": {
+                "Finanzas": -10,
+                "Perfil": -5,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 99,
+          "titulo": "Falla de Cocina o Horno antes de Cena Familiar",
+          "texto": "Inesperado! El horno o cocina principal colapsa un dia antes de una cena que organizas en tu hogar. Contratas reparacion de emergencia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar reparacion de urgencia de cocina.",
+              "efectos": {
+                "Finanzas": -18,
+                "Social": 15,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Comprar comida hecha costosa a ultima hora.",
+              "efectos": {
+                "Finanzas": -22,
+                "Social": 5,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 100,
+          "titulo": "Perdida de Boletos de Viaje Institucional",
+          "texto": "Inesperado! Un error en la plataforma de reservas cancela tu pasaje para la reunion de junta anual. Pagas la tarifa de reemision express?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar tarifa de reemision express.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 12
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Presentar tu informe por videoconferencia de baja calidad.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -15,
+                "Salud": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 101,
+          "titulo": "Inundación Menor por Falla de Lavadora de Vecino",
+          "texto": "Inesperado! Una fuga del departamento contiguo filtra hacia tu closet dañando trajes de trabajo. Pagas la tintoreria y secado urgente?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar tintoreria y secado urgente.",
+              "efectos": {
+                "Finanzas": -12,
+                "Perfil": 5,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Reclamar agresivamente al vecino sin arreglar la ropa.",
+              "efectos": {
+                "Finanzas": 0,
+                "Social": -18,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "titulo": "Daño de Bateria de Smartphone en Cierre de Año",
+          "texto": "Inesperado! La bateria de tu telefono movil se apaga cada 10 minutos y necesitas estar disponible para las llamadas de junta. Compras un telefono nuevo de contado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar telefono de reemplazo de contado.",
+              "efectos": {
+                "Finanzas": -20,
+                "Perfil": 8
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar un cargador portatil pegado todo el dia.",
+              "efectos": {
+                "Finanzas": -5,
+                "Perfil": -8,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 103,
+          "titulo": "Multa por Retraso en Declaración Tributaria",
+          "texto": "Inesperado! Tu contador cometio un desliz en la fecha limite de presentacion impositiva. Pagas la penalidad administrativa?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la penalidad de contado.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Iniciar proceso administrativo contra el contador.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -15,
+                "Perfil": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 104,
+          "titulo": "Rotura de Vidrio de Ventana Principal",
+          "texto": "Inesperado! Una pelota o accidente rompe el cristal de la ventana de tu sala en dias de clima frio. Pagas la reposicion del cristal el mismo dia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar reposicion de cristal express.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 12
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Tapar con cartón durante una semana.",
+              "efectos": {
+                "Finanzas": 0,
+                "Salud": -18,
+                "Social": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 105,
+          "titulo": "Falla de Disco de Almacenamiento de Servidor",
+          "texto": "Inesperado! El servidor donde guardas la memoria anual sufre un sector defectuoso. Pagas un software de recuperacion de discos?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar software de recuperacion de discos.",
+              "efectos": {
+                "Finanzas": -12,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Reescribir los datos durante toda la noche.",
+              "efectos": {
+                "Finanzas": 0,
+                "Salud": -18,
+                "Perfil": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": 106,
+          "titulo": "Gastos Vet de Urgencia por Ingesta de Adorno",
+          "texto": "Inesperado! Tu mascota ingiere un adorno de decoracion y requiere atencion medica inmediata. Pagas la clinica veterinaria nocturna?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar clinica veterinaria nocturna.",
+              "efectos": {
+                "Finanzas": -20,
+                "Salud": 15,
+                "Social": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Esperar a la mañana siguiente con angustia.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -20
+              }
+            }
+          ]
+        },
+        {
+          "id": 107,
+          "titulo": "Retención de Dinero en Cajero Automático",
+          "texto": "Inesperado! El cajero automatico se traga tu tarjeta de debito principal durante un fin de semana festivo. Pagas consumos con tarjeta de credito?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Usar la tarjeta de credito con cautela.",
+              "efectos": {
+                "Finanzas": -10,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Cancelar tus salidas y quedarte sin liquidez.",
+              "efectos": {
+                "Finanzas": 5,
+                "Social": -12,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 108,
+          "titulo": "Extravío de Maletín con Regalos Corporativos",
+          "texto": "Inesperado! Olvidas la bolsa con los presentes institucionales que debias entregar a los directores. Compras los presentes de tu bolsillo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar los presentes de tu bolsillo.",
+              "efectos": {
+                "Finanzas": -18,
+                "Perfil": 12,
+                "Social": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Explicar la perdida a la junta directiva.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -18,
+                "Social": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 109,
+          "titulo": "Daño por Humedad en Sistema de Calefacción",
+          "texto": "Inesperado! El radiador emite un goteo que requiere mantenimiento de fontaneria. Pagas la revision urgente?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar revision de fontaneria urgente.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Apagar la calefaccion y usar abrigos.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -18
+              }
+            }
+          ]
+        },
+        {
+          "id": 110,
+          "titulo": "Sanción por Estacinar en Zonas de Evento",
+          "texto": "Inesperado! Una grúa remolca tu auto durante un evento corporativo por cambio de señalizacion. Pagas la tarifa de rescate de vehiculo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la tarifa de rescate de vehiculo.",
+              "efectos": {
+                "Finanzas": -20,
+                "Salud": -5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Dejar el auto en el deposito el fin de semana.",
+              "efectos": {
+                "Finanzas": -10,
+                "Salud": -18,
+                "Perfil": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": 111,
+          "titulo": "Falla de Conexión en la Presentación de Junta",
+          "texto": "Inesperado! La red wifi de la sala de juntas falla minutos antes de tu exposicion de ascenso. Contratas un punto de acceso movil privado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Activar punto de acceso movil de alta velocidad.",
+              "efectos": {
+                "Finanzas": -10,
+                "Perfil": 15
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Intentar conectar con la red publica inestable.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -20,
+                "Salud": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": 112,
+          "titulo": "Balance de Emergencias de Cierre de Año",
+          "texto": "Inesperado! Al revisar el balance anual, notas que los imprevistos consumieron el 80 por ciento de tu Fondo de Emergencia. Reorganizas tu presupuesto de enero para reconstruir el fondo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Programar reconstruccion del fondo en enero.",
+              "efectos": {
+                "Finanzas": 18,
+                "Salud": 12,
+                "Perfil": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Ignorar el fondo de emergencia y gastar el sobrante.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 113,
+          "titulo": "Daño en Cerradura Externa por Vandalismo",
+          "texto": "Inesperado! Intentan forzar la cerradura principal de tu residencia durante las festividades. Pagas la instalacion de una cerradura de alta seguridad?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar cerradura de alta seguridad de contado.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 12
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Colocar un pasador temporal inseguro.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": 114,
+          "titulo": "Falla de Termostato de Congelador Festivo",
+          "texto": "Inesperado! El congelador falla y pone en riesgo las compras guardadas para la cena de fin de año. Pagas la reparacion del termostato el mismo dia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar reparacion express de termostato.",
+              "efectos": {
+                "Finanzas": -15,
+                "Salud": 10,
+                "Social": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Pedir hielo a vecinos y usar hieleras portatiles.",
+              "efectos": {
+                "Finanzas": -5,
+                "Salud": -12
+              }
+            }
+          ]
+        },
+        {
+          "id": 115,
+          "titulo": "Filtración de Techo por Nieve o Lluvia Fuerte",
+          "texto": "Inesperado! Un temporal genera una filtracion en tu dormitorio durante el cierre de diciembre. Pagas la reparacion de urgencia?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar reparacion de techo urgente.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Dormir en el sofa de la sala durante dos semanas.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -18
+              }
+            }
+          ]
+        },
+        {
+          "id": 116,
+          "titulo": "Extravío de Carnet Impositivo para Cierre",
+          "texto": "Inesperado! Pierdes el documento de registro fiscal requerido para la firma del informe final de auditoria. Pagas un duplicado express notarizado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar duplicado express notarizado.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 12
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Hacer el tramite publico regular retrasando el cierre.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -18,
+                "Salud": -8
+              }
+            }
+          ]
+        },
+        {
+          "id": 117,
+          "titulo": "Falla de Batería de Auto en Nochebuena/Fin de Año",
+          "texto": "Inesperado! La bateria del vehiculo muere justo antes de trasladarte a la cena de fin de año con la directiva o familia. Pagas el auxilio festivo?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar servicio de auxilio vial festivo.",
+              "efectos": {
+                "Finanzas": -20,
+                "Social": 15,
+                "Salud": 5
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Cancelar el traslado y quedarte en casa.",
+              "efectos": {
+                "Finanzas": 0,
+                "Social": -18,
+                "Salud": -12
+              }
+            }
+          ]
+        },
+        {
+          "id": 118,
+          "titulo": "Sobrecargo por Tarifas Dinámicas de Transporte",
+          "texto": "Inesperado! La alta demanda de fin de año triplica el costo de tus traslados en transporte privado hacia la oficina. Pagas la tarifa dinamica?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar la tarifa dinamica para llegar a tiempo.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 10
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Ir caminando o en transporte saturado e ingresar tarde.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -15,
+                "Salud": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": 119,
+          "titulo": "Falla en Sistema de Video Conferencia Directiva",
+          "texto": "Inesperado! La camara web o microfono ejecutivo de tu equipo colapsa antes de la entrevista final de evaluacion. Compras repuestos de alta gama?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Comprar perifericos ejecutivos de contado.",
+              "efectos": {
+                "Finanzas": -15,
+                "Perfil": 15
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Hacer la llamada solo con audio de baja calidad.",
+              "efectos": {
+                "Finanzas": 0,
+                "Perfil": -18
+              }
+            }
+          ]
+        },
+        {
+          "id": 120,
+          "titulo": "Daño de Tubería de Gas de Calefacción",
+          "texto": "Inesperado! La empresa de gas detecta un desgaste en la manguera principal de la calefaccion y suspende el servicio hasta su cambio. Pagas el repuesto autorizado?",
+          "opciones": [
+            {
+              "id": "Izquierda",
+              "accion": "Pagar el repuesto autorizado de contado.",
+              "efectos": {
+                "Finanzas": -18,
+                "Salud": 15
+              }
+            },
+            {
+              "id": "Derecha",
+              "accion": "Usar cobijas gruesas y posponer el arreglo.",
+              "efectos": {
+                "Finanzas": 5,
+                "Salud": -20
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }

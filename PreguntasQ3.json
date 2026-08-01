@@ -1,0 +1,1985 @@
+{
+    "bloque_introductorio": [
+      {
+        "dia": 181,
+        "tipo": "Estandard: Delegación de Mando",
+        "personaje": "Don Roberto Gerente",
+        "texto": "Cumpliste seis meses en el cargo y el Gerente te asigna oficialmente la supervisión del presupuesto del equipo. Para arrancar, te sugiere invertir parte del capital operativo sobrante en un fondo de renta fija corporativo. Aceptas asumir la responsabilidad?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Asumir la gestión y colocar en Renta Fija.",
+            "efectos": {
+              "Perfil": 18,
+              "Finanzas": 10,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Pedir más tiempo antes de tomar el mando.",
+            "efectos": {
+              "Perfil": -10,
+              "Salud": 8,
+              "Finanzas": 0
+            }
+          }
+        ]
+      },
+      {
+        "dia": 182,
+        "tipo": "Mecanica: Fondo de Retiro / Save More Tomorrow",
+        "personaje": "Asesora del Banco",
+        "texto": "Te ofrecen activar el programa \"Ahorra Más Mañana\": el 50 por ciento de cualquier futuro aumento salarial o bono se irá automáticamente a un fondo de retiro congelado con interés compuesto. Activas el candado?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Activar el programa de retiro automático.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener la liquidez completa de tus futuros bonos.",
+            "efectos": {
+              "Finanzas": -8,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "dia": 183,
+        "tipo": "Conductual: Efecto Dinero de la Casa",
+        "personaje": "Un Antiguo Compañero",
+        "texto": "Un conocido de la universidad te aborda con entusiasmo: afirma tener un algoritmo \"infalible\" de arbitraje en criptomonedas y te pide 300 dólares de tu fondo de ahorro para triplicarlo en un mes. Inviertes en su esquema?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Invertir en el esquema de criptomonedas.",
+            "efectos": {
+              "Finanzas": -25,
+              "Salud": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Rechazar la propuesta engañosa.",
+            "efectos": {
+              "Finanzas": 10,
+              "Perfil": 5
+            }
+          }
+        ]
+      },
+      {
+        "dia": 184,
+        "tipo": "Estandard: Personal a Cargo",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos te asigna un practicante universitario para que lo capacites durante este trimestre. Decides invertir tiempo diario en enseñarle para que te ayude a delegar tareas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Capacitar activamente al practicante.",
+            "efectos": {
+              "Perfil": 15,
+              "Social": 10,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Asignarle solo tareas de archivo sin capacitarlo.",
+            "efectos": {
+              "Perfil": -5,
+              "Social": -8,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "dia": 185,
+        "tipo": "Inesperado: Primera Emergencia Q3",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Una variación imprevista en el tipo de cambio o en la inflación incrementa un 15 por ciento el costo de tus gastos fijos mensuales. Reajustas tu presupuesto recortando suscripciones y ocio?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Recortar gastos de ocio inmediatamente.",
+            "efectos": {
+              "Finanzas": 12,
+              "Social": -10,
+              "Salud": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Absorber el incremento usando tu tarjeta.",
+            "efectos": {
+              "Finanzas": -18,
+              "Salud": 0
+            }
+          }
+        ]
+      }
+    ],
+    "pool_aleatorio_modular": [
+      {
+        "carta": 1,
+        "tipo": "Conductual: Ilusión del Experto",
+        "personaje": "Vendedor de Franquicias",
+        "texto": "Te presentan la oportunidad de comprar una participación menor en una franquicia de comida rápida \"sin riesgo\". Exige un pago inicial alto. Inviertes de tus ahorros?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Comprar la participación en la franquicia.",
+            "efectos": {
+              "Finanzas": -22,
+              "Perfil": 8,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Rechazar el negocio y mantener tu capital.",
+            "efectos": {
+              "Finanzas": 12,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 2,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos quiere que presentes junto a él una propuesta de innovación tecnológica frente al directorio. Si la aprueban, aumentará la carga de trabajo de ambos. Aceptas liderar la propuesta?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Presentar la propuesta innovadora.",
+            "efectos": {
+              "Perfil": 20,
+              "Salud": -15,
+              "Social": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Declinar para no sobrecargarte.",
+            "efectos": {
+              "Perfil": -8,
+              "Salud": 10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 3,
+        "tipo": "Conductual: El Concurso de Belleza de Keynes",
+        "personaje": "Tu Reflejo",
+        "texto": "Ves en redes sociales que una acción tecnológica inflada está subiendo aceleradamente porque \"todo el mundo la está comprando\". Compras acciones esperando vender antes de que la burbuja explote?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Subirte a la ola especulativa.",
+            "efectos": {
+              "Finanzas": -20,
+              "Salud": -12
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Evitar activos inflados por euforia social.",
+            "efectos": {
+              "Finanzas": 8,
+              "Perfil": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 4,
+        "tipo": "Inversión en Bienes",
+        "personaje": "Agente Inmobiliario",
+        "texto": "Te ofrecen entrar en una preventa inmobiliaria de un pequeño estudio pagando cuotas de entrada a largo plazo. Decides comprometer parte de tu sueldo a la compra del inmueble?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Entrar en la preventa inmobiliaria.",
+            "efectos": {
+              "Finanzas": -20,
+              "Salud": 10,
+              "Perfil": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Continuar alquilando sin compromisos a largo plazo.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 5,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! La empresa de tecnología donde tienes contratado un servicio o tu plataforma de trabajo sufre un ciberataque y debes pagar un servicio de protección de datos personales. Lo contratas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la protección de datos.",
+            "efectos": {
+              "Finanzas": -12,
+              "Perfil": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Confiar en las soluciones gratuitas.",
+            "efectos": {
+              "Finanzas": 5,
+              "Perfil": -10,
+              "Salud": -8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 6,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente debe viajar a una cumbre internacional y te delega la firma de cheques y autorizaciones operativas del departamento mientras no está. Aceptas la responsabilidad legal?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Asumir la firma autorizada.",
+            "efectos": {
+              "Perfil": 18,
+              "Salud": -10,
+              "Finanzas": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Solicitar que un gerente adjunto firme.",
+            "efectos": {
+              "Perfil": -8,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 7,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Un Amigo de la Universidad",
+        "texto": "Un viejo amigo de la carrera organiza una ronda de capital para su nueva startup y te pide un préstamo personal con pagaré formal. Le prestas el dinero?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Prestar el dinero con pagaré.",
+            "efectos": {
+              "Finanzas": -18,
+              "Social": 15
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Negarte a mezclar finanzas con amistad.",
+            "efectos": {
+              "Finanzas": 10,
+              "Social": -15
+            }
+          }
+        ]
+      },
+      {
+        "carta": 8,
+        "tipo": "Miopía del Taxista / Short-term Framing",
+        "personaje": "Tu Reflejo",
+        "texto": "Tu fondo de inversión tuvo un rendimiento negativo durante dos días consecutivos. Decides retirar todo el dinero en lugar de evaluar el rendimiento anual promedio?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Retirar por pánico de corto plazo.",
+            "efectos": {
+              "Finanzas": -15,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener la estrategia a largo plazo.",
+            "efectos": {
+              "Finanzas": 10,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 9,
+        "tipo": "Estandard: Capacitación",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos abre cupos para una certificación internacional en gestión de riesgos financieros. La empresa cubre el 70 por ciento si apruebas al primer intento. Te inscribes?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Inscribirte en la certificación de riesgos.",
+            "efectos": {
+              "Finanzas": -12,
+              "Perfil": 22,
+              "Salud": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Dejar pasar la oportunidad.",
+            "efectos": {
+              "Finanzas": 8,
+              "Perfil": -10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 10,
+        "tipo": "Estilo de Vida",
+        "personaje": "Vendedor de Vehículos",
+        "texto": "Con tu nuevo estatus en la empresa, te tientan para entregar tu vehículo usado o tu abono de transporte y financiar un auto cero kilómetros a cuatro años. Aceptas la deuda?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Financiar el auto cero kilómetros.",
+            "efectos": {
+              "Finanzas": -22,
+              "Perfil": 10,
+              "Social": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener tu medio de transporte actual.",
+            "efectos": {
+              "Finanzas": 18,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 11,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Tu Madre",
+        "texto": "Tus padres necesitan cambiar los electrodomésticos principales de su hogar y te piden financiar la compra con tu tarjeta de crédito a doce meses. Aceptas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Financiar los electrodomésticos familiares.",
+            "efectos": {
+              "Finanzas": -18,
+              "Social": 20,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Aportar una cantidad menor en efectivo de contado.",
+            "efectos": {
+              "Finanzas": -8,
+              "Social": -8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 12,
+        "tipo": "Diversificación Ineficiente",
+        "personaje": "Asesor de Inversiones",
+        "texto": "Un ejecutivo de cuenta te sugiere repartir tu capital en diez fondos diferentes muy complejos que cobran comisiones de mantenimiento individuales. Aceptas la recomendación?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Aceptar la cartera hiper-diversificada.",
+            "efectos": {
+              "Finanzas": -15,
+              "Salud": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener una cartera sencilla de bajo costo.",
+            "efectos": {
+              "Finanzas": 12,
+              "Perfil": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 13,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos cometió un error en el cálculo de impuestos de un proveedor y te pide ayuda para corregir los libros antes de que la auditoría interna lo detecte. Lo ayudas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Ayudar a corregir los libros contables.",
+            "efectos": {
+              "Social": 15,
+              "Perfil": 5,
+              "Salud": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Pedirle que notifique el error a contabilidad.",
+            "efectos": {
+              "Social": -12,
+              "Perfil": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 14,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Una corrección repentina en los mercados bursátiles reduce un 10 por ciento el valor nominal de tus inversiones en renta variable. Vendes en pérdida o esperas la recuperación?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Vender de inmediato consolidando la pérdida.",
+            "efectos": {
+              "Finanzas": -20,
+              "Salud": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Esperar la recuperación del ciclo de mercado.",
+            "efectos": {
+              "Finanzas": 5,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 15,
+        "tipo": "Estandard: Bienestar",
+        "personaje": "Psicólogo de Empresa",
+        "texto": "En un taller de liderazgo te sugieren implementar un día sin reuniones a la semana para mejorar la concentración de tu equipo. Implementas la medida?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Establecer el día sin reuniones.",
+            "efectos": {
+              "Salud": 15,
+              "Perfil": 10,
+              "Social": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener la agenda de reuniones habitual.",
+            "efectos": {
+              "Salud": -10,
+              "Perfil": -5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 16,
+        "tipo": "Aversión a la Pérdida / Efecto Dotación",
+        "personaje": "Tu Reflejo",
+        "texto": "Tienes un activo o herramienta de trabajo antigua que ya no usas pero te niegas a venderla por un precio justo porque sientes que \"vale más para ti\". La pones en venta?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Vender el activo al precio de mercado.",
+            "efectos": {
+              "Finanzas": 12,
+              "Salud": 0
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Guardarlo en el depósito sin generar ingresos.",
+            "efectos": {
+              "Finanzas": 0,
+              "Salud": -5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 17,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente te pide que evalúes el desempeño de Carlos y de tus compañeros para la asignación de bonos trimestrales. Asumes la responsabilidad de calificar a tus pares?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Realizar la evaluación transparente de tus pares.",
+            "efectos": {
+              "Perfil": 18,
+              "Social": -12,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Calificar a todos con la nota máxima para evitar conflictos.",
+            "efectos": {
+              "Perfil": -10,
+              "Social": 15
+            }
+          }
+        ]
+      },
+      {
+        "carta": 18,
+        "tipo": "Estandard: Oferta Laboral",
+        "personaje": "Cazatalentos / Headhunter",
+        "texto": "Un cazatalentos te contacta ofreciéndote un puesto similar en una empresa competidora con un 20 por ciento más de sueldo, pero en un entorno de alta inestabilidad. Aceptas la entrevista?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Ir a la entrevista con la competencia.",
+            "efectos": {
+              "Perfil": 12,
+              "Social": -5,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Rechazar la oferta y mantener la lealtad.",
+            "efectos": {
+              "Perfil": 5,
+              "Salud": 8,
+              "Social": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 19,
+        "tipo": "Estandard: Capacitación",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Se organiza un seminario sobre Inteligencia Artificial aplicada a la gestión financiera corporativa. El costo es moderado y es fuera del horario laboral. Asistes?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar e ir al seminario de IA.",
+            "efectos": {
+              "Finanzas": -12,
+              "Perfil": 20,
+              "Salud": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Dejar pasar la capacitación.",
+            "efectos": {
+              "Finanzas": 8,
+              "Perfil": -10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 20,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Un Vecino",
+        "texto": "Los propietarios del edificio acuerdan instalar paneles solares pagando una cuota extraordinaria prorrateada a un año. Te sumas a la inversión verde?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la cuota de los paneles solares.",
+            "efectos": {
+              "Finanzas": -15,
+              "Salud": 8,
+              "Social": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Votar en contra y mantener el sistema tradicional.",
+            "efectos": {
+              "Finanzas": 10,
+              "Social": -12
+            }
+          }
+        ]
+      },
+      {
+        "carta": 21,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Un fallo en el servidor local de tu vivienda daña tus respaldos de trabajo personales y necesitas contratar un servicio de recuperación forense de datos. Pagas el servicio?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la recuperación forense de datos.",
+            "efectos": {
+              "Finanzas": -18,
+              "Perfil": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Rehacer el trabajo desde cero acumulando cansancio.",
+            "efectos": {
+              "Finanzas": 5,
+              "Salud": -18,
+              "Perfil": -8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 22,
+        "tipo": "Sesgo de Sobrenivel / Overconfidence",
+        "personaje": "Tu Reflejo",
+        "texto": "Tras varios meses exitosos, te sientes tan confiado en tus habilidades de inversión que piensas operar con apalancamiento financiero (dinero prestado). Te apalancas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Operar con apalancamiento financiero.",
+            "efectos": {
+              "Finanzas": -25,
+              "Salud": -15
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Operar solo con tu capital propio.",
+            "efectos": {
+              "Finanzas": 10,
+              "Salud": 10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 23,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos te propone automatizar la elaboración del presupuesto departamental con una macro avanzada. Requiere invertir dos tardes enteras en programarla. Lo ayudan a programar?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Programar la macro presupuestaria.",
+            "efectos": {
+              "Perfil": 18,
+              "Salud": -10,
+              "Social": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Seguir usando el método manual tradicional.",
+            "efectos": {
+              "Perfil": -5,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 24,
+        "tipo": "Trampa del Costo Cero",
+        "personaje": "Vendedor de Cursos",
+        "texto": "Te ofrecen un curso de gestión patrimonial \"totalmente gratuito\" que resulta ser una charla de ventas agresiva para comprar productos financieros de alto riesgo. Te quedas a la charla?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Quedarte y ceder a la presión de compra.",
+            "efectos": {
+              "Finanzas": -15,
+              "Perfil": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Levantarte e irte al detectar la trampa.",
+            "efectos": {
+              "Finanzas": 8,
+              "Perfil": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 25,
+        "tipo": "Mecanica: Reestructuración de Deuda",
+        "personaje": "Notificacion del Banco",
+        "texto": "El banco te ofrece consolidar todas tus pequeñas deudas de tarjetas y compras a cuotas en un solo crédito personal a tasa fija a tres años. Aceptas la consolidación?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Consolidar las deudas en un solo crédito.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Continuar pagando las tarjetas por separado.",
+            "efectos": {
+              "Finanzas": -12,
+              "Salud": -8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 26,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Tu Hermano o Familiar",
+        "texto": "Tu familiar necesita renovar su herramienta de trabajo principal y te pide que le sirvas de garante en una tienda de equipos. Aceptas ser su garante?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Firmar como garante del equipo.",
+            "efectos": {
+              "Finanzas": -12,
+              "Social": 15
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Explicar las políticas de tu presupuesto y declinar.",
+            "efectos": {
+              "Finanzas": 8,
+              "Social": -15
+            }
+          }
+        ]
+      },
+      {
+        "carta": 27,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos busca a un líder de proyecto para coordinar la auditoría ambiental de la oficina. Ofrece una bonificación pequeña al finalizar el año. Te postulas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Postularte a la coordinación ambiental.",
+            "efectos": {
+              "Perfil": 15,
+              "Finanzas": 8,
+              "Salud": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "No postularte y concentrarte en tus metas directas.",
+            "efectos": {
+              "Perfil": 0,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 28,
+        "tipo": "Anclaje de Expectativas",
+        "personaje": "Tu Reflejo",
+        "texto": "Das por sentado que recibirás un bono de rendimiento de fin de año y planeas contratar un paquete de viajes pagando el adelanto hoy. Haces la reserva anticipada?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Reservar el viaje contando con el bono futuro.",
+            "efectos": {
+              "Finanzas": -18,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Esperar a tener el dinero acreditado en cuenta.",
+            "efectos": {
+              "Finanzas": 12,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 29,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente te encomienda la negociación de tarifas con el principal proveedor de insumos de la empresa para reducir costos un 5 por ciento. Aceptas liderar la negociación?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Liderar la negociación de proveedores.",
+            "efectos": {
+              "Perfil": 20,
+              "Finanzas": 10,
+              "Salud": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Pedir que compras corporativas lleve la reunión.",
+            "efectos": {
+              "Perfil": -8,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 30,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Un Amigo Cercano",
+        "texto": "Un amigo cercano organiza una cena privada de celebración por su boda y pide una contribución para un regalo colectivo de alta gama. Das la cuota completa?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Aportar la cuota del regalo de boda.",
+            "efectos": {
+              "Finanzas": -15,
+              "Social": 20
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Dar un detalle individual más accesible.",
+            "efectos": {
+              "Finanzas": 8,
+              "Social": -10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 31,
+        "tipo": "Framing",
+        "personaje": "Notificacion de la App de Inversiones",
+        "texto": "La app te muestra que tu portafolio ha ganado un 12 por ciento este trimestre presentándolo como \"el mejor momento para duplicar tu posición\". Duplicas tu posición?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Duplicar la posición por entusiasmo.",
+            "efectos": {
+              "Finanzas": -18,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Rebalancear y tomar ganancias parciales.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 32,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos quiere pedir un permiso especial de tres días y te solicita que asumas la totalidad de sus firmas e informes mientras no está. Aceptas la sobrecarga de trabajo?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Asumir la carga laboral de Carlos.",
+            "efectos": {
+              "Social": 15,
+              "Salud": -15,
+              "Perfil": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Solicitar que la jefatura redistribuya el trabajo.",
+            "efectos": {
+              "Social": -10,
+              "Salud": 8,
+              "Perfil": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 33,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Un fallo de plomería o infraestructura en tu inmueble daña insumos personales y debes contratar servicios de secado e higienización profesional. Pagas el servicio?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la higienización profesional.",
+            "efectos": {
+              "Finanzas": -15,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Limpiar manualmente perdiendo tu fin de semana.",
+            "efectos": {
+              "Finanzas": 5,
+              "Salud": -15,
+              "Social": -8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 34,
+        "tipo": "Estandard: Bienestar",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos ofrece pases con descuento para un centro deportivo con piscina y sauna cerca de la oficina. Te inscribes al pase anual?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Inscribirte en el centro deportivo.",
+            "efectos": {
+              "Finanzas": -12,
+              "Salud": 20,
+              "Social": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Continuar con tu rutina de ejercicio gratuita.",
+            "efectos": {
+              "Finanzas": 8,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 35,
+        "tipo": "Contabilidad Mental",
+        "personaje": "Tu Reflejo",
+        "texto": "Recibes el pago de dividendos de tu pequeña inversión. En lugar de reinvertirlo con interés compuesto, sientes que es \"dinero regalado\" y quieres gastarlo en ropa. Lo gastas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Gastar los dividendos en ropa de marca.",
+            "efectos": {
+              "Finanzas": -10,
+              "Salud": 8,
+              "Social": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Re-invertir los dividendos en el fondo.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 36,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Un Compañero de Departamento",
+        "texto": "Un colega te invita a unirte a una liga deportiva amateur de la empresa que juega los martes por la noche. Aceptas unirte al equipo?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Unirte al equipo deportivo.",
+            "efectos": {
+              "Social": 18,
+              "Salud": 12,
+              "Finanzas": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Declinar por falta de tiempo.",
+            "efectos": {
+              "Social": -10,
+              "Salud": -5,
+              "Finanzas": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 37,
+        "tipo": "Ilusión de Plusvalía",
+        "personaje": "Asesor Inmobiliario",
+        "texto": "Un agente te asegura que los terrenos en una zona alejada se duplicarán de precio en un año y te anima a dar una seña inicial. Das la seña?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Dar la seña para la compra del terreno.",
+            "efectos": {
+              "Finanzas": -20,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Investigar los planes urbanísticos reales.",
+            "efectos": {
+              "Finanzas": 10,
+              "Perfil": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 38,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente te solicita que capacites a los jefes de otras áreas en el uso del nuevo sistema presupuestario. Aceptas dictar las capacitaciones corporativas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Dictar las capacitaciones interdepartamentales.",
+            "efectos": {
+              "Perfil": 20,
+              "Social": 10,
+              "Salud": -12
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Preparar solo un manual en PDF y distribuirlo.",
+            "efectos": {
+              "Perfil": 5,
+              "Salud": 8,
+              "Social": -5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 39,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Tu Madre",
+        "texto": "Tus padres desean contratar un seguro de hogar y te piden que pagues la cuota mensual como apoyo a la familia. Aceptas pagar el seguro familiar?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la cuota del seguro de tus padres.",
+            "efectos": {
+              "Finanzas": -12,
+              "Social": 18,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Ayudarles a buscar una opción que ellos puedan cubrir.",
+            "efectos": {
+              "Finanzas": 8,
+              "Social": -10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 40,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Tu equipo informático principal sufre un fallo en la fuente de poder durante una entrega de presupuesto. Pagas un técnico a domicilio express?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar el servicio técnico a domicilio express.",
+            "efectos": {
+              "Finanzas": -15,
+              "Perfil": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Llevarlo tú mismo a la tienda al día siguiente.",
+            "efectos": {
+              "Finanzas": 5,
+              "Perfil": -15,
+              "Salud": -10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 41,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos organiza una feria de voluntariado corporativo el sábado por la mañana. Aceptas asistir como representante de tu gerencia?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Asistir al voluntariado corporativo.",
+            "efectos": {
+              "Social": 15,
+              "Perfil": 10,
+              "Salud": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Guardar el sábado para tus actividades personales.",
+            "efectos": {
+              "Social": -5,
+              "Perfil": 0,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 42,
+        "tipo": "Descuento Hiperbólico",
+        "personaje": "Tu Reflejo",
+        "texto": "Te ofrecen la opción de cobrar un incentivo de 200 dólares hoy o esperar tres meses para recibir 300 dólares. Elijes cobrar los 200 dólares hoy?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Cobrar los 200 dólares de inmediato.",
+            "efectos": {
+              "Finanzas": 10,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Esperar los tres meses para cobrar 300 dólares.",
+            "efectos": {
+              "Finanzas": 22,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 43,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos sugiere recortar el tiempo de revisión de calidad de los informes para salir una hora más temprano toda la semana. Aceptas la propuesta?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Aceptar el recorte de control de calidad.",
+            "efectos": {
+              "Salud": 12,
+              "Perfil": -12,
+              "Social": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener el proceso de revisión exhaustivo.",
+            "efectos": {
+              "Salud": -10,
+              "Perfil": 10,
+              "Social": -5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 44,
+        "tipo": "Aversión a la Pérdida",
+        "personaje": "Vendedor de Servicios",
+        "texto": "Te ofrecen un seguro para tu equipaje y viajes por una pequeña cuota mensual fija. Sientes temor a perder pertenencias en tu próximo traslado y lo contratas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Contratar el seguro de viajes.",
+            "efectos": {
+              "Finanzas": -10,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Declinar el seguro y cuidar tus pertenencias.",
+            "efectos": {
+              "Finanzas": 8,
+              "Salud": -5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 45,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente solicita que coordines la auditoría interna del inventario de activos del departamento. Requiere trabajar el fin de semana. Aceptas la coordinación?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Coordinar la auditoría de activos el fin de semana.",
+            "efectos": {
+              "Perfil": 18,
+              "Salud": -15,
+              "Social": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Pedir que la auditoría la realice un equipo externo.",
+            "efectos": {
+              "Perfil": -5,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 46,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Un Amigo de la Infancia",
+        "texto": "Un amigo te invita a sumarte como inversionista pasivo en un taller mecánico que está expandiéndose. Pide una suma alta de capital. Inviertes?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Invertir en el taller mecánico.",
+            "efectos": {
+              "Finanzas": -22,
+              "Social": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Declinar la inversión en un sector que no conoces.",
+            "efectos": {
+              "Finanzas": 12,
+              "Social": -8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 47,
+        "tipo": "Miopía Financiera",
+        "personaje": "Tu Reflejo",
+        "texto": "Revisas los gráficos de tus inversiones a largo plazo cinco veces al día y la volatilidad te quita el sueño. Decides eliminar la app de tu teléfono durante un mes?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Desinstalar la app para evitar la ansiedad.",
+            "efectos": {
+              "Salud": 18,
+              "Finanzas": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Continuar monitoreando las velas financieras diario.",
+            "efectos": {
+              "Salud": -15,
+              "Finanzas": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 48,
+        "tipo": "Estandard: Capacitación",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Se abre la inscripción para un programa ejecutivo de gestión del tiempo y productividad personal financiado en un 80 por ciento por la empresa. Te inscribes?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Inscribirte al programa de productividad.",
+            "efectos": {
+              "Finanzas": -8,
+              "Perfil": 18,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Dejar pasar la convocatoria.",
+            "efectos": {
+              "Finanzas": 5,
+              "Perfil": -8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 49,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Un incremento en la cuota de mantenimiento de tu edificio o residencia te exige un pago retroactivo inesperado. Pagas la cuota retroactiva de contado?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la cuota retroactiva de contado.",
+            "efectos": {
+              "Finanzas": -15,
+              "Salud": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Solicitar diferir el pago en tres cuotas.",
+            "efectos": {
+              "Finanzas": -5,
+              "Salud": -10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 50,
+        "tipo": "Mecanica: Incremento de Línea de Crédito",
+        "personaje": "Notificacion del Banco",
+        "texto": "El banco te otorga una línea de crédito rotativa preferencial autorizada para cualquier consumo. La mantienes activa para imprevistos?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Mantener activa la línea rotativa.",
+            "efectos": {
+              "Finanzas": -5,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Cancelar la línea de crédito rotativa.",
+            "efectos": {
+              "Finanzas": 10,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 51,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos quiere proponer la reestructuración del archivo digital del área y te pide que lideres la mitad del proyecto. Aceptas codirigir la reorganización?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Codirigir la reestructuración digital.",
+            "efectos": {
+              "Perfil": 15,
+              "Social": 10,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Sugerir que se mantenga el sistema actual.",
+            "efectos": {
+              "Perfil": -5,
+              "Social": -8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 52,
+        "tipo": "Sesgo de Confirmación",
+        "personaje": "Tu Reflejo",
+        "texto": "Lees un análisis en un blog anónimo que asegura que la Renta Fija perderá todo su valor este año y te tienta mover todo a oro físico. Mueves tus activos a oro?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Mover todo tu capital a oro físico.",
+            "efectos": {
+              "Finanzas": -18,
+              "Salud": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Consultar informes de analistas certificados.",
+            "efectos": {
+              "Finanzas": 10,
+              "Perfil": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 53,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente te convoca para revisar la propuesta de presupuesto del departamento para el próximo año. Te pide trabajar la propuesta durante la noche. Aceptas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Trabajar la propuesta nocturna de presupuesto.",
+            "efectos": {
+              "Perfil": 20,
+              "Salud": -15,
+              "Social": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Entregar una propuesta base en horario de oficina.",
+            "efectos": {
+              "Perfil": 5,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 54,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Un Vecino",
+        "texto": "Un vecino te propone organizar una red de compras comunitarias al por mayor para reducir gastos de supermercado. Aceptas coordinar el grupo de compras?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Coordinar las compras comunitarias.",
+            "efectos": {
+              "Finanzas": 12,
+              "Social": 12,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Continuar haciendo tus compras de forma individual.",
+            "efectos": {
+              "Finanzas": 0,
+              "Social": -5,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 55,
+        "tipo": "Estandard: Bienestar",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos instala una zona de descanso y meditación en el edificio. Te tomas quince minutos diarios en tu jornada para usar el espacio?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Usar el espacio de descanso diariamente.",
+            "efectos": {
+              "Salud": 15,
+              "Perfil": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Trabajar continuo sin tomar la pausa.",
+            "efectos": {
+              "Salud": -10,
+              "Perfil": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 56,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Una falla mecánica en tu vehículo o sistema de transporte habitual te exige un recambio de piezas inmediato. Pagas las piezas originales?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Comprar las piezas originales de contado.",
+            "efectos": {
+              "Finanzas": -18,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Comprar repuestos genéricos de menor duración.",
+            "efectos": {
+              "Finanzas": -8,
+              "Salud": -10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 57,
+        "tipo": "Efecto Encuadre",
+        "personaje": "Tu Reflejo",
+        "texto": "Un comercio te ofrece comprar un producto pagando 10 dólares al mes durante tres años o 250 dólares de contado hoy. Elijes pagar los 250 dólares de contado?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar de contado para evitar recargos.",
+            "efectos": {
+              "Finanzas": -18,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Pagar las cuotas mensuales de 10 dólares.",
+            "efectos": {
+              "Finanzas": -10,
+              "Salud": -5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 58,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente solicita que elijas a un empleado de tu equipo para recibir una beca de formación. Seleccionas con base en méritos técnicos dejando de lado simpatías?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Seleccionar estrictamente por mérito técnico.",
+            "efectos": {
+              "Perfil": 15,
+              "Social": -8,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Seleccionar al colega con quien mejor te llevas.",
+            "efectos": {
+              "Perfil": -10,
+              "Social": 12
+            }
+          }
+        ]
+      },
+      {
+        "carta": 59,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Un Amigo Cercano",
+        "texto": "Un amigo te propone inscribirse a un club de debate y oratoria que se reúne los sábados por la tarde. Te inscribes para mejorar tu perfil profesional y social?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Inscribirte en el club de debate.",
+            "efectos": {
+              "Perfil": 15,
+              "Social": 15,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Declinar la invitación para descansar el fin de semana.",
+            "efectos": {
+              "Perfil": 0,
+              "Social": -8,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 60,
+        "tipo": "Mecanica: Depósito a Plazo",
+        "personaje": "Notificacion del Banco",
+        "texto": "El banco lanza una opción de depósito a plazo fijo garantizado a 180 días con rendimiento superior a la inflación. Inviertes parte de tu saldo disponible?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Invertir en el depósito a plazo fijo.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener el saldo en la cuenta corriente.",
+            "efectos": {
+              "Finanzas": -5,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 61,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos te propone reorganizar el cronograma de entregas del departamento para concentrar todo el trabajo en tres días intensos y tener el viernes libre. Aceptas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Comprimir la jornada laboral en tres días.",
+            "efectos": {
+              "Perfil": 8,
+              "Salud": -15,
+              "Social": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener la distribución uniforme de la semana.",
+            "efectos": {
+              "Perfil": 5,
+              "Salud": 8,
+              "Social": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 62,
+        "tipo": "Sesgo hacia el Presente",
+        "personaje": "Tu Reflejo",
+        "texto": "Sientes un deseo intenso de comprar un dispositivo tecnológico de última generación que no necesitas realmente. Aplazas la compra 30 días para evaluar si es impulso?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Aplazar la compra 30 días.",
+            "efectos": {
+              "Finanzas": 12,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Comprar el dispositivo hoy mismo.",
+            "efectos": {
+              "Finanzas": -18,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 63,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos te invita a formar parte del panel de entrevistas para seleccionar a los nuevos analistas de la empresa. Aceptas participar en los paneles?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Participar en las entrevistas de selección.",
+            "efectos": {
+              "Perfil": 18,
+              "Social": 8,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Excusarte por exceso de trabajo operacional.",
+            "efectos": {
+              "Perfil": -5,
+              "Social": -5,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 64,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Una fuga en el sistema de climatización de tu vivienda te exige contratar un servicio de reparación técnica hoy. Pagas la reparación inmediata?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la reparación técnica de inmediato.",
+            "efectos": {
+              "Finanzas": -15,
+              "Salud": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Usar ventiladores portátiles y posponer el arreglo.",
+            "efectos": {
+              "Finanzas": 5,
+              "Salud": -15
+            }
+          }
+        ]
+      },
+      {
+        "carta": 65,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente te encomienda la redacción del informe anual de sostenibilidad y responsabilidad social del departamento. Aceptas liderar la redacción?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Liderar el informe de sostenibilidad.",
+            "efectos": {
+              "Perfil": 18,
+              "Social": 10,
+              "Salud": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Delegar la redacción en un analista júnior.",
+            "efectos": {
+              "Perfil": 0,
+              "Social": -5,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 66,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Tu Hermano o Familiar",
+        "texto": "Tu familiar te solicita ayuda económica para cubrir una matrícula universitaria de emergencia prometiendo devolver el dinero en seis meses. Le prestas el dinero?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Prestar el dinero para la matrícula.",
+            "efectos": {
+              "Finanzas": -18,
+              "Social": 20,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Declinar por tener compromisos de inversión activos.",
+            "efectos": {
+              "Finanzas": 10,
+              "Social": -18
+            }
+          }
+        ]
+      },
+      {
+        "carta": 67,
+        "tipo": "Ilusión de Control",
+        "personaje": "Tu Reflejo",
+        "texto": "Crees que puedes adivinar el movimiento exacto de una divisa extranjera esta semana y te tienta cambiar tus ahorros a esa moneda. Haces el cambio especulativo?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Cambiar tus ahorros a divisa extranjera.",
+            "efectos": {
+              "Finanzas": -20,
+              "Salud": -12
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener tus ahorros en tu estrategia diversificada.",
+            "efectos": {
+              "Finanzas": 8,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 68,
+        "tipo": "Estandard: Capacitación",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Se ofrece un taller avanzado de Excel y Power BI con certificación oficial pagado completamente por la empresa en horario laboral. Te inscribes?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Inscribirte al taller de Power BI.",
+            "efectos": {
+              "Perfil": 20,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Declinar para avanzar trabajo acumulado.",
+            "efectos": {
+              "Perfil": -8,
+              "Salud": -5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 69,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos sugiere organizar una cena de fin de trimestre en un restaurante exclusivo para todo el departamento. Apoyas la propuesta?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Apoyar la cena en el restaurante exclusivo.",
+            "efectos": {
+              "Finanzas": -15,
+              "Social": 18,
+              "Perfil": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Proponer una opción más accesible en la oficina.",
+            "efectos": {
+              "Finanzas": 10,
+              "Social": -8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 70,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Un robo de accesorios en tu vehículo o equipo de traslado exige una reposición inmediata para seguir operando. Pagas la reposición de contado?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la reposición de contado.",
+            "efectos": {
+              "Finanzas": -18,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Usar la tarjeta de crédito a seis cuotas.",
+            "efectos": {
+              "Finanzas": -12,
+              "Salud": -5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 71,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente solicita que representes a la empresa en una mesa de trabajo con el ministerio o regulador del sector. Aceptas la representación institucional?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Asistir a la mesa institucional con el regulador.",
+            "efectos": {
+              "Perfil": 22,
+              "Social": 10,
+              "Salud": -12
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Enviar a un asesor legal en tu representación.",
+            "efectos": {
+              "Perfil": -5,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 72,
+        "tipo": "Aversión al Arrepentimiento",
+        "personaje": "Tu Reflejo",
+        "texto": "Ves que un fondo de inversión de alto riesgo tuvo ganancias del 20 por ciento el mes pasado y sientes el impulso de meterte hoy por miedo a seguir quedándote fuera. Entras?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Invertir impulsivamente en el fondo en máximos.",
+            "efectos": {
+              "Finanzas": -20,
+              "Salud": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener tu plan de inversión disciplinado.",
+            "efectos": {
+              "Finanzas": 10,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 73,
+        "tipo": "Estandard: Cierre Mes 7",
+        "personaje": "Dia 210 (Fijo)",
+        "texto": "Completas el séptimo mes del año (primer mes del Trimestre 3). Evaluas los rendimientos de tus inversiones y el nivel de deuda acumulado. Realizas un balance presupuestario para ajustar gastos?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Realizar el balance y recortar gastos innecesarios.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Dejar fluir los gastos sin revisión de presupuesto.",
+            "efectos": {
+              "Finanzas": -10,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 74,
+        "tipo": "Estandard: Cierre Mes 8",
+        "personaje": "Dia 240 (Fijo)",
+        "texto": "Completas el octavo mes de trabajo. Con la delegación de tareas y tus proyectos en marcha, evalúas si destinar una parte de tus ganancias a amortizar capital de deudas o reforzar tu fondo de retiro.",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Amortizar deudas y reforzar retiro.",
+            "efectos": {
+              "Finanzas": 18,
+              "Salud": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener la liquidez en la cuenta corriente.",
+            "efectos": {
+              "Finanzas": -8,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 75,
+        "tipo": "Estandard: Cierre Q3",
+        "personaje": "Dia 270 (Fijo)",
+        "texto": "Has completado nueve meses (270 días) de gestión. Si mantuviste tus cuatro barras a flote, la junta directiva destaca tu capacidad para hacer crecer tus activos, liderar personal y evitar trampas financieras. Te preparas para el trimestre final de evaluación para el ascenso?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Revisar tu estrategia integral y descansar el fin de semana.",
+            "efectos": {
+              "Salud": 18,
+              "Finanzas": 12,
+              "Perfil": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Salir a festejar en grande tu rendimiento del trimestre.",
+            "efectos": {
+              "Finanzas": -15,
+              "Social": 20,
+              "Salud": -8
+            }
+          }
+        ]
+      }
+    ]
+  }

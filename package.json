@@ -1,0 +1,15 @@
+{
+  "name": "oficina-360",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:frontend": "npm --prefix frontend install",
+    "build": "npm --prefix frontend run build",
+    "start": "node server/server.mjs",
+    "dev": "npm --prefix frontend run dev"
+  },
+  "dependencies": {
+    "express": "latest"
+  }
+}

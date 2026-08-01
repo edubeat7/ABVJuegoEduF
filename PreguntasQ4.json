@@ -1,0 +1,1173 @@
+{
+    "bloque_introductorio": [
+      {
+        "dia": 271,
+        "tipo": "Estandard: Incio de Evaluacion de Cierre",
+        "personaje": "Don Roberto Gerente",
+        "texto": "Inicia el último trimestre. El Gerente te notifica que la junta directiva ha comenzado la evaluación de candidatos para tu ascenso. Te solicita un informe de auditoría completa de tu gestión del año. Aceptas trabajar tiempo extra para que quede impecable?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Dedicar noches extra al informe de auditoría.",
+            "efectos": {
+              "Perfil": 20,
+              "Salud": -12,
+              "Social": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Entregar la auditoría estándar dentro de tu jornada.",
+            "efectos": {
+              "Perfil": 8,
+              "Salud": 8,
+              "Social": 5
+            }
+          }
+        ]
+      },
+      {
+        "dia": 272,
+        "tipo": "Mecanica: Declaracion de Impuestos",
+        "personaje": "Agente Impositivo / Contador",
+        "texto": "Llegó el periodo de declaración y pago de impuestos anuales. Un gestor te sugiere abultar deducciones dudosas para pagar menos impuestos. Prefieres pagar el monto legal completo?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar el monto legal completo de impuestos.",
+            "efectos": {
+              "Finanzas": -20,
+              "Perfil": 15,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Aceptar las deducciones dudosas del gestor.",
+            "efectos": {
+              "Finanzas": 12,
+              "Perfil": -20,
+              "Salud": -15
+            }
+          }
+        ]
+      },
+      {
+        "dia": 273,
+        "tipo": "Estandard: La Gran Oferta Externa",
+        "personaje": "Cazatalentos / Headhunter",
+        "texto": "Un cazatalentos te ofrece la posición de Gerente en una empresa competidora con un 40 por ciento más de sueldo, pero exige que renuncies esta misma semana antes de tu evaluación final. Aceptas la oferta externa?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Aceptar la oferta e irte a la competencia.",
+            "efectos": {
+              "Perfil": 15,
+              "Finanzas": 20,
+              "Social": -15
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Rechazar la oferta y esperar el ascenso interno.",
+            "efectos": {
+              "Perfil": 15,
+              "Salud": 10,
+              "Social": 5
+            }
+          }
+        ]
+      },
+      {
+        "dia": 274,
+        "tipo": "Estandard: Evaluacion 360 Grados",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos inicia la evaluación de 360 grados donde tus compañeros (incluyendo a Carlos) calificarán tu liderazgo. Decides organizar una cena informal con el equipo para cultivar relaciones?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Organizar la cena con el equipo.",
+            "efectos": {
+              "Finanzas": -15,
+              "Social": 20,
+              "Perfil": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Confiar únicamente en tus resultados numéricos.",
+            "efectos": {
+              "Finanzas": 10,
+              "Social": -10,
+              "Perfil": 5
+            }
+          }
+        ]
+      },
+      {
+        "dia": 275,
+        "tipo": "Inesperado: Primera Emergencia Q4",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Una auditoría sorpresa del ente regulador detecta una inconsistencia en un archivo antiguo que no fue creado por ti. Asumes la corrección inmediata trabajando el fin de semana?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Liderar la corrección el fin de semana.",
+            "efectos": {
+              "Perfil": 22,
+              "Salud": -15,
+              "Social": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Señalar que el archivo pertenecía a un ex-empleado.",
+            "efectos": {
+              "Perfil": -10,
+              "Salud": 8,
+              "Social": 0
+            }
+          }
+        ]
+      }
+    ],
+    "pool_aleatorio_modular": [
+      {
+        "carta": 1,
+        "tipo": "Estandard: Negociacion Salarial",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente te reúne para tantear tus expectativas salariales en caso de ser promovido a Gerente. Exiges un aumento del 35 por ciento o aceptas la banda estándar del 20 por ciento?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Exigir el aumento agresivo del 35 por ciento.",
+            "efectos": {
+              "Finanzas": 20,
+              "Perfil": -8,
+              "Salud": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Aceptar la banda estándar del 20 por ciento.",
+            "efectos": {
+              "Finanzas": 10,
+              "Perfil": 12,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 2,
+        "tipo": "Conductual: Miopia Financiera / Cierre de Posiciones",
+        "personaje": "Tu Reflejo",
+        "texto": "Tus inversiones han crecido un 15 por ciento en el año. Sientes el impulso de venderlo todo hoy para \"celebrar con efectivo\" en lugar de mantener tu portafolio de largo plazo. Vendes todo?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Liquidar todo tu portafolio por impulso.",
+            "efectos": {
+              "Finanzas": -15,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener la estrategia de inversión a largo plazo.",
+            "efectos": {
+              "Finanzas": 18,
+              "Salud": 10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 3,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos te confiesa que cometió un error en la consolidación del balance de fin de año. Te pide que lo ayudes a corregirlo en secreto antes de la presentación final. Lo ayudas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Ayudar a Carlos a corregir el balance.",
+            "efectos": {
+              "Social": 18,
+              "Perfil": 5,
+              "Salud": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Exigirle que reporte el error a la gerencia.",
+            "efectos": {
+              "Social": -15,
+              "Perfil": 10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 4,
+        "tipo": "Conductual: Ilusion de Experto",
+        "personaje": "Vendedor de Asesorias",
+        "texto": "Un consultor te ofrece un \"método garantizado\" para pasar la entrevista final de junta directiva por un costo alto. Pagas la asesoría privada?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la asesoría de la entrevista.",
+            "efectos": {
+              "Finanzas": -18,
+              "Perfil": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Preparar la presentación por tu cuenta.",
+            "efectos": {
+              "Finanzas": 12,
+              "Perfil": 10,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 5,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Tu equipo informático de trabajo sufre un fallo crítico a tres días de entregar el plan estratégico anual. Pagas una reparación express urgente de tu bolsillo?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la reparación express de contado.",
+            "efectos": {
+              "Finanzas": -18,
+              "Perfil": 15
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Trabajar en los equipos lentos de la oficina.",
+            "efectos": {
+              "Finanzas": 5,
+              "Perfil": -15,
+              "Salud": -15
+            }
+          }
+        ]
+      },
+      {
+        "carta": 6,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos te pide que redactes los manuales de funciones para tu puesto actual para la persona que te reemplazará al ascender. Dedicas tiempo a redactarlos?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Redactar manuales de funciones detallados.",
+            "efectos": {
+              "Perfil": 18,
+              "Social": 10,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Entregar una guía básica de una página.",
+            "efectos": {
+              "Perfil": -8,
+              "Social": -5,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 7,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Tu Madre",
+        "texto": "Tus padres organizan la cena de fin de año en tu ciudad natal. Viajar implica pedir dos días libres en medio del cierre anual de la empresa. Pides los días para viajar?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pedir los días y viajar con tu familia.",
+            "efectos": {
+              "Social": 22,
+              "Salud": 12,
+              "Perfil": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Quedarte en la ciudad trabajando durante el cierre.",
+            "efectos": {
+              "Social": -18,
+              "Salud": -8,
+              "Perfil": 15
+            }
+          }
+        ]
+      },
+      {
+        "carta": 8,
+        "tipo": "Conductual: Rebalanceo de Cartera",
+        "personaje": "Asesor de Inversiones",
+        "texto": "Tu asesor te sugiere rebalancear tu cartera vendiendo activos sobrevalorados para comprar renta fija de bajo riesgo antes de fin de año. Rebalanceas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Ejecutar el rebalanceo conservador de fin de año.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener la cartera en activos de alto riesgo.",
+            "efectos": {
+              "Finanzas": 18,
+              "Salud": -10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 9,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Un Amigo Cercano",
+        "texto": "Un amigo te invita a una fiesta de fin de año exclusiva que requiere comprar entradas de alto valor y vestimenta formal. Aceptas la invitación?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Ir a la fiesta exclusiva de fin de año.",
+            "efectos": {
+              "Finanzas": -18,
+              "Social": 18,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Pasar una noche tranquila con amigos cercanos.",
+            "efectos": {
+              "Finanzas": 12,
+              "Social": 5,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 10,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente solicita que presentes el informe de desempeño de tu departamento frente a los socios accionistas. Requiere ensayar la presentación la noche anterior. Ensayas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Ensayar toda la noche para los accionistas.",
+            "efectos": {
+              "Perfil": 22,
+              "Salud": -15,
+              "Social": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Confiar en tu conocimiento y dormir temprano.",
+            "efectos": {
+              "Perfil": 8,
+              "Salud": 12
+            }
+          }
+        ]
+      },
+      {
+        "carta": 11,
+        "tipo": "Conductual: Sesgo de Confirmacion",
+        "personaje": "Tu Reflejo",
+        "texto": "Crees que el ascenso es una certeza absoluta y consideras dar el pago inicial para un departamento de mayor lujo antes de tener el nombramiento oficial. Das la inicial?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Dar la inicial del departamento de lujo.",
+            "efectos": {
+              "Finanzas": -25,
+              "Salud": -15
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Esperar a tener la resolución de junta firmada.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 12,
+        "tipo": "Estandard: Bienestar",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos organiza una jornada de chequeo médico ejecutivo obligatorio para el personal elegible a cargos gerenciales. Te realizas todos los estudios?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Realizar el chequeo médico completo.",
+            "efectos": {
+              "Salud": 18,
+              "Perfil": 8,
+              "Finanzas": 0
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Posponer los exámenes para después del ascenso.",
+            "efectos": {
+              "Salud": -15,
+              "Perfil": -5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 13,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos te pide que lo recomiendes para ocupar tu puesto actual de Asistente de Gerencia cuando tú seas promovido. Le das tu recomendación formal frente al Gerente?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Dar tu recomendación formal para Carlos.",
+            "efectos": {
+              "Social": 20,
+              "Perfil": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Decir que evaluarás a varios candidatos.",
+            "efectos": {
+              "Social": -15,
+              "Perfil": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 14,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Un robo o pérdida de pertenencias personales en tu residencia te exige reemplazar documentación y equipos de urgencia. Cubres los gastos de contado?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Reemplazar todo de contado de tus ahorros.",
+            "efectos": {
+              "Finanzas": -20,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Financiar las compras a doce cuotas.",
+            "efectos": {
+              "Finanzas": -12,
+              "Salud": -8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 15,
+        "tipo": "Estandard: Salud Mental",
+        "personaje": "Psicologo de Empresa",
+        "texto": "En la evaluación psicotécnica previa al ascenso te detectan signos de sobrecarga de trabajo y te sugieren tomar dos días de desconexión digital total. Te desconectas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Tomar los dos días de desconexión digital.",
+            "efectos": {
+              "Salud": 22,
+              "Perfil": -5,
+              "Social": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Continuar respondiendo correos las 24 horas.",
+            "efectos": {
+              "Salud": -18,
+              "Perfil": 10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 16,
+        "tipo": "Conductual: Descuento Hiperbolico / Bono Anual",
+        "personaje": "Tu Reflejo",
+        "texto": "Anuncian que el bono anual se pagará en dos semanas. Un comercio te ofrece un producto a crédito cobrándote intereses altos si te lo llevas hoy. Esperas al bono?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Comprar a crédito hoy sin esperar al bono.",
+            "efectos": {
+              "Finanzas": -15,
+              "Salud": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Esperar a cobrar el bono efectivo en dos semanas.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 17,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Un Colega de Otro Departamento",
+        "texto": "El jefe de logística te propone formar una alianza interna para presentar proyectos conjuntos el próximo año. Aceptas formalizar la alianza estratégica?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Aceptar la alianza interdepartamental.",
+            "efectos": {
+              "Perfil": 18,
+              "Social": 12,
+              "Salud": -8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener la autonomía estricta de tu departamento.",
+            "efectos": {
+              "Perfil": 0,
+              "Social": -8,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 18,
+        "tipo": "Conductual: Aversion a las Pérdidas",
+        "personaje": "Vendedor de Seguros",
+        "texto": "Un agente te insiste para contratar un seguro de vida corporativo de alta cobertura antes de fin de año argumentando que las tarifas subirán en enero. Contratas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Contratar el seguro de vida corporativo.",
+            "efectos": {
+              "Finanzas": -12,
+              "Salud": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Evaluar con calma en el presupuesto del próximo año.",
+            "efectos": {
+              "Finanzas": 8,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 19,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente solicita que organices el archivo físico y digital consolidado de los últimos tres años para la auditoría de empalme. Asumes la tarea?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Organizar todo el archivo consolidado.",
+            "efectos": {
+              "Perfil": 15,
+              "Salud": -12,
+              "Social": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Contratar un servicio pasante para el archivo.",
+            "efectos": {
+              "Finanzas": -8,
+              "Perfil": 8,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 20,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Tu Hermano o Familiar",
+        "texto": "Tu familiar te solicita un préstamo de fin de año para cubrir compromisos de su hogar prometiendo pagarte con sus ingresos de enero. Le prestas el dinero?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Prestar el dinero de fin de año.",
+            "efectos": {
+              "Finanzas": -15,
+              "Social": 18
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Explicar tus compromisos de cierre anual.",
+            "efectos": {
+              "Finanzas": 10,
+              "Social": -15
+            }
+          }
+        ]
+      },
+      {
+        "carta": 21,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Un incremento extraordinario en las tarifas de servicios públicos o condominio de fin de año exige un pago no presupuestado. Pagas la diferencia de inmediato?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la cuota extraordinaria de inmediato.",
+            "efectos": {
+              "Finanzas": -15,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Refutarla formalmente retrasando el pago.",
+            "efectos": {
+              "Finanzas": 5,
+              "Salud": -12,
+              "Perfil": -5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 22,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos te pide que participes en el video corporativo de fin de año representando a los empleados destacados. Aceptas grabar el video?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Participar en el video corporativo.",
+            "efectos": {
+              "Perfil": 15,
+              "Social": 12,
+              "Salud": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Declinar la participación por falta de tiempo.",
+            "efectos": {
+              "Perfil": -5,
+              "Social": -8,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 23,
+        "tipo": "Conductual: Costo Hundido / Proyectos Antiguos",
+        "personaje": "Tu Reflejo",
+        "texto": "Invertiste dinero y tiempo en un proyecto personal este año que no ha generado ningún resultado positivo. Decides cerrarlo definitivamente antes del año nuevo?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Cerrar el proyecto y asumir la pérdida.",
+            "efectos": {
+              "Finanzas": 10,
+              "Salud": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Inyectarle más dinero para intentar \"salvarlo\".",
+            "efectos": {
+              "Finanzas": -18,
+              "Salud": -10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 24,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos y el grupo de la oficina organizan un intercambio de regalos de fin de año con una cuota de valor fija alta. Participas en el intercambio?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Participar en el intercambio de regalos.",
+            "efectos": {
+              "Finanzas": -10,
+              "Social": 18,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Excusarte amablemente de participar.",
+            "efectos": {
+              "Finanzas": 8,
+              "Social": -12
+            }
+          }
+        ]
+      },
+      {
+        "carta": 25,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente te encomienda la preparación de la hoja de ruta presupuestaria para el primer trimestre del próximo año. Aceptas entregarla antes de vacaciones?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Entregar la hoja de ruta presupuestaria.",
+            "efectos": {
+              "Perfil": 20,
+              "Salud": -12,
+              "Social": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Solicitar entregarla a la vuelta del descanso.",
+            "efectos": {
+              "Perfil": -8,
+              "Salud": 10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 26,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Un Amigo de la Universidad",
+        "texto": "Un amigo te invita a pasar unos días de descanso en su finca durante el periodo festivo compartiendo gastos. Aceptas ir para despejar la mente?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Ir a la finca de descanso.",
+            "efectos": {
+              "Finanzas": -12,
+              "Social": 18,
+              "Salud": 15
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Quedarte en la ciudad organizando tus metas.",
+            "efectos": {
+              "Finanzas": 8,
+              "Social": -10,
+              "Perfil": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 27,
+        "tipo": "Mecanica: Rendimientos Anuales",
+        "personaje": "Notificacion del Banco",
+        "texto": "El banco te presenta la liquidación anual de rendimientos de tus cuentas de ahorro e inversión. Decides mantener el capital ganado reinvirtiéndose solo?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Mantener el capital ganado reinvirtiéndose.",
+            "efectos": {
+              "Finanzas": 18,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Retirar las ganancias para gastar en diciembre.",
+            "efectos": {
+              "Finanzas": -12,
+              "Salud": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 28,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos solicita voluntarios para supervisar el evento anual de entrega de regalos a los hijos de los trabajadores. Te sumas al voluntariado?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Sumarte al evento infantil corporativo.",
+            "efectos": {
+              "Social": 18,
+              "Perfil": 8,
+              "Salud": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "No inscribirte y descansar el fin de semana.",
+            "efectos": {
+              "Social": -8,
+              "Perfil": 0,
+              "Salud": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 29,
+        "tipo": "Conductual: Framing / Resumen Anual",
+        "personaje": "Tu Reflejo",
+        "texto": "Revisas tus estados financieros del año y ves que lograste ahorrar un 15 por ciento de tus ingresos. Lo celebras reconociendo tu disciplina financiera?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Reconocer tu avance y mantener la disciplina.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 12,
+              "Perfil": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Considerar que pudiste ahorrar más y estresarte.",
+            "efectos": {
+              "Finanzas": 5,
+              "Salud": -12
+            }
+          }
+        ]
+      },
+      {
+        "carta": 30,
+        "tipo": "Imprevisto",
+        "personaje": "Evento Inesperado",
+        "texto": "Inesperado! Una falla en el sistema de tuberías o calefacción de tu vivienda exige una reparación de emergencia justo antes de las fiestas. Pagas el servicio de guardia?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar el servicio de urgencia navideño.",
+            "efectos": {
+              "Finanzas": -18,
+              "Salud": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Resolver con parches temporales incómodos.",
+            "efectos": {
+              "Finanzas": 5,
+              "Salud": -18
+            }
+          }
+        ]
+      },
+      {
+        "carta": 31,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente te pide que revises los informes individuales de todo el departamento para la reunión de empalme con el directorio. Trabajas el domingo en ello?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Trabajar el domingo revisando informes.",
+            "efectos": {
+              "Perfil": 20,
+              "Salud": -15,
+              "Social": -10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Hacer una revisión rápida el lunes temprano.",
+            "efectos": {
+              "Perfil": 5,
+              "Salud": 10,
+              "Social": 5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 32,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos quiere pedir un adelanto de su bono anual para compras personales y te pide que abogues por él ante contabilidad. Lo apoyas con la gestión?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Abogar por Carlos ante contabilidad.",
+            "efectos": {
+              "Social": 15,
+              "Perfil": -5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Sugerirle que haga el trámite por los canales regulares.",
+            "efectos": {
+              "Social": -10,
+              "Perfil": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 33,
+        "tipo": "Estandard: Capacitacion",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Se abre la inscripción para un seminario de liderazgo directivo que inicia en enero, cubierto al 100 por ciento por la empresa. Te inscribes para el próximo año?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Inscribirte al seminario directivo de enero.",
+            "efectos": {
+              "Perfil": 18,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Dejar pasar la oportunidad.",
+            "efectos": {
+              "Perfil": -10,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 34,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Un Vecino",
+        "texto": "Los vecinos del condominio organizan una cena comunitaria de fin de año y piden un aporte económico por apartamento. Aportas la cuota?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Pagar la cuota de la cena comunitaria.",
+            "efectos": {
+              "Finanzas": -10,
+              "Social": 15,
+              "Salud": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Declinar la invitación comunitaria.",
+            "efectos": {
+              "Finanzas": 8,
+              "Social": -12
+            }
+          }
+        ]
+      },
+      {
+        "carta": 35,
+        "tipo": "Conductual: Anclaje de Expectativas",
+        "personaje": "Tu Reflejo",
+        "texto": "Sientes la tentación de gastar la totalidad de tu bono anual en compras festivas e incentivos personales. Decides destinar al menos el 50 por ciento a tu fondo de reserva?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Guardar el 50 por ciento del bono en reserva.",
+            "efectos": {
+              "Finanzas": 22,
+              "Salud": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Gastar todo el bono en celebraciones y compras.",
+            "efectos": {
+              "Finanzas": -18,
+              "Salud": 8,
+              "Social": 8
+            }
+          }
+        ]
+      },
+      {
+        "carta": 36,
+        "tipo": "Estandard: Trabajo",
+        "personaje": "Don Roberto Gerente",
+        "texto": "El Gerente te convoca a una reunión a solas para repasar los aciertos y errores de tu gestión durante los 365 días. Escuchas la retroalimentación con madurez?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Aceptar la retroalimentación con profesionalismo.",
+            "efectos": {
+              "Perfil": 20,
+              "Salud": 10,
+              "Social": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Ponérte a la defensiva sobre tus decisiones.",
+            "efectos": {
+              "Perfil": -15,
+              "Salud": -10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 37,
+        "tipo": "Estandard: Red Social",
+        "personaje": "Carlos Colega",
+        "texto": "Carlos te invita a tomar un café a solas fuera de la oficina para felicitarte por tu desempeño durante el año y desearte éxito en la votación de la junta. Aceptas?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Aceptar el café con Carlos.",
+            "efectos": {
+              "Social": 18,
+              "Salud": 10,
+              "Perfil": 5
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Excusarte por compromisos de trabajo de última hora.",
+            "efectos": {
+              "Social": -12,
+              "Salud": -5
+            }
+          }
+        ]
+      },
+      {
+        "carta": 38,
+        "tipo": "Estandard: Evaluacion Final",
+        "personaje": "Lic. Sofia RRHH",
+        "texto": "Recursos Humanos recopila los últimos formularios de evaluación de tus indicadores (Salud, Perfil, Social y Finanzas) antes de enviarlos a la Junta Directiva. Revisas que todo esté en orden?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Revisar minuciosamente tus indicadores.",
+            "efectos": {
+              "Perfil": 15,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Enviar la documentación sin revisión final.",
+            "efectos": {
+              "Perfil": -5,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 39,
+        "tipo": "Conductual: Balance del Año",
+        "personaje": "Tu Reflejo",
+        "texto": "Es la noche previa a la decisión de la junta directiva. Miras hacia atrás y reflexionas sobre cómo aprendiste a controlar tus sesgos, cuidar tu salud y manejar tu dinero sin perder a tus seres queridos. Descansas en paz?",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Dormir tranquilo confiando en tu equilibrio.",
+            "efectos": {
+              "Salud": 20,
+              "Perfil": 10,
+              "Finanzas": 10
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Pasar la noche en vela lleno de ansiedad.",
+            "efectos": {
+              "Salud": -18,
+              "Perfil": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 40,
+        "tipo": "Estandard: Cierre Mes 10",
+        "personaje": "Dia 300 (Fijo)",
+        "texto": "Completas el décimo mes del año. Con las auditorías en marcha, revisas tus deudas acumuladas y el estado de tu Fondo de Emergencia antes del cierre de fin de año.",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Ajustar presupuesto y amortizar deudas.",
+            "efectos": {
+              "Finanzas": 15,
+              "Salud": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Mantener tus gastos sin modificaciones.",
+            "efectos": {
+              "Finanzas": -10,
+              "Salud": 0
+            }
+          }
+        ]
+      },
+      {
+        "carta": 41,
+        "tipo": "Estandard: Cierre Mes 11",
+        "personaje": "Dia 330 (Fijo)",
+        "texto": "Completas 330 días de gestión. Faltan solo 35 días para la decisión final de la Junta Directiva. Haces una pausa para priorizar tu salud física y mental antes del maratón final de entregas.",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Priorizar descanso y balance laboral.",
+            "efectos": {
+              "Salud": 18,
+              "Perfil": 8,
+              "Social": 8
+            }
+          },
+          {
+            "id": "Derecha",
+            "accion": "Trabajar sin pausa hasta el último día.",
+            "efectos": {
+              "Salud": -15,
+              "Perfil": 12,
+              "Social": -10
+            }
+          }
+        ]
+      },
+      {
+        "carta": 42,
+        "tipo": "Cierre del Juego",
+        "personaje": "Dia 365 (Fijo)",
+        "texto": "Llegó el Día 365. La Junta Directiva se reúne para emitir su veredicto. Si mantuviste tus cuatro indicadores (Salud, Perfil, Social y Finanzas) por encima del 0%, la Junta se pone de pie y te aprueba.",
+        "opciones": [
+          {
+            "id": "Izquierda",
+            "accion": "Entrar a la sala de juntas con temple equilibrado. (Pasa a Pantalla de Victoria / Ascenso a Gerente)."
+          },
+          {
+            "id": "Derecha",
+            "accion": "Entrar a la sala de juntas demostrando liderazgo asertivo. (Pasa a Pantalla de Victoria / Ascenso a Gerente)."
+          }
+        ]
+      }
+    ]
+  }
