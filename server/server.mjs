@@ -21,7 +21,8 @@ app.get("/health", (_, response) => response.json({ status: "ok" }));
 app.post("/game/start", (request, response) => response.json(engine.start(request.body?.gender)));
 app.post("/game/:gameId/choose", (request, response) => {
   try {
-    response.json(engine.choose(request.params.gameId, request.body.option_id));
+    if (request.params.gameId !== request.body?.game?.id) throw new Error("La partida recibida no coincide con la ruta.");
+    response.json(engine.choose(request.body.game, request.body.option_id));
   } catch (error) {
     response.status(400).json({ detail: error.message });
   }

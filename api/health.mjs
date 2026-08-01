@@ -1,0 +1,3 @@
+export default function handler(_, response) {
+  return response.status(200).json({ status: "ok" });
+}

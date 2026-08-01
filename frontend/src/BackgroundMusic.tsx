@@ -3,10 +3,13 @@ import { useEffect, useRef, useState } from "react";
 const TRACKS = ["/Musica/oficina-01.mp3", "/Musica/oficina-02.mp3", "/Musica/oficina-03.mp3"];
 const VOLUME = 0.14;
 
-export default function BackgroundMusic() {
+type BackgroundMusicProps = { onRestart: () => void };
+
+export default function BackgroundMusic({ onRestart }: BackgroundMusicProps) {
   const audio = useRef<HTMLAudioElement>(null);
   const [track, setTrack] = useState(() => Math.floor(Math.random() * TRACKS.length));
   const [muted, setMuted] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const player = audio.current;
@@ -27,14 +30,17 @@ export default function BackgroundMusic() {
         preload="auto"
         onEnded={() => setTrack((current) => (current + 1) % TRACKS.length)}
       />
-      <button
-        className="music-toggle"
-        type="button"
-        aria-pressed={muted}
-        onClick={() => setMuted((current) => !current)}
-      >
-        {muted ? "♫ Activar música" : "♪ Silenciar música"}
-      </button>
+      <div className="game-options">
+        <button className="options-toggle" type="button" aria-expanded={menuOpen} onClick={() => setMenuOpen((current) => !current)}>
+          ⚙ Opciones
+        </button>
+        {menuOpen && <div className="options-menu">
+          <button type="button" aria-pressed={muted} onClick={() => setMuted((current) => !current)}>
+            {muted ? "♫ Activar música" : "♪ Silenciar música"}
+          </button>
+          <button className="restart-button" type="button" onClick={onRestart}>↻ Reiniciar partida</button>
+        </div>}
+      </div>
     </>
   );
 }

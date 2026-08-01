@@ -12,7 +12,6 @@ const FAILURES = {
 export class GameEngine {
   constructor() {
     this.cards = loadCards();
-    this.games = new Map();
   }
 
   start(playerGender = "hombre") {
@@ -22,17 +21,19 @@ export class GameEngine {
       day: 1,
       playerGender: gender,
       stats: { ...INITIAL_STATS },
-      used: Object.fromEntries([1, 2, 3, 4].map((quarter) => [quarter, new Set()])),
+      used: Object.fromEntries([1, 2, 3, 4].map((quarter) => [quarter, []])),
       status: "playing",
       message: "Tu primer año comienza hoy. Mantén los cuatro pilares en equilibrio.",
       daysPassed: 0,
     };
-    this.games.set(game.id, game);
     return this.payload(game, this.nextCard(game));
   }
 
-  choose(gameId, optionId) {
-    const game = this.get(gameId);
+  choose(game, optionId) {
+    if (!game?.id || !game?.stats || !game?.card) {
+      throw new Error("La partida no existe o no se pudo recuperar.");
+    }
+    game.used ??= Object.fromEntries([1, 2, 3, 4].map((quarter) => [quarter, []]));
     const card = game.card;
     if (!card || game.status !== "playing") throw new Error("No hay una decisión activa para esta partida.");
     const option = card.opciones.find((item) => item.id === optionId);
@@ -62,13 +63,15 @@ export class GameEngine {
       [card] = intro;
     } else {
       const candidates = Math.random() < 0.1 && source.unexpected.length ? source.unexpected : source.pool;
-      let unused = candidates.filter((item) => !game.used[quarter].has(item.id));
+      if (!Array.isArray(game.used[quarter])) game.used[quarter] = [];
+      const used = new Set(game.used[quarter]);
+      let unused = candidates.filter((item) => !used.has(item.id));
       if (!unused.length) {
-        game.used[quarter].clear();
+        game.used[quarter] = [];
         unused = candidates;
       }
       card = unused[Math.floor(Math.random() * unused.length)];
-      game.used[quarter].add(card.id);
+      game.used[quarter].push(card.id);
     }
     game.card = card;
     return card;
@@ -88,16 +91,10 @@ export class GameEngine {
     return false;
   }
 
-  get(gameId) {
-    const game = this.games.get(gameId);
-    if (!game) throw new Error("La partida no existe o ya se reinició el servidor.");
-    return game;
-  }
-
   payload(game, card) {
     return {
       id: game.id, day: game.day, daysPassed: game.daysPassed, playerGender: game.playerGender, stats: game.stats, status: game.status,
-      message: game.message, card, failure: game.failure,
+      message: game.message, card, failure: game.failure, used: game.used,
     };
   }
 }

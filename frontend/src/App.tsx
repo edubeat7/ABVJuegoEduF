@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BackgroundMusic from "./BackgroundMusic";
 
 const API = "";
+const SAVED_GAME = "oficina-360-game";
 type Gender = "hombre" | "mujer";
 type Effects = Record<string, number | boolean>;
 type Option = { id: string; accion: string; efectos: Effects };
@@ -35,6 +36,18 @@ export default function App() {
   const [dragX, setDragX] = useState(0);
   const [startX, setStartX] = useState<number | null>(null);
 
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(SAVED_GAME);
+      if (saved) {
+        const game = JSON.parse(saved) as Game;
+        if (game.status === "playing") setGame(game);
+      }
+    } catch {
+      localStorage.removeItem(SAVED_GAME);
+    }
+  }, []);
+
   const start = async (gender: Gender) => {
     setLoading(true); setError("");
     try {
@@ -43,7 +56,9 @@ export default function App() {
         body: JSON.stringify({ gender }),
       });
       if (!response.ok) throw new Error("No se pudo iniciar el motor del juego.");
-      setGame(await response.json());
+      const newGame = await response.json() as Game;
+      localStorage.setItem(SAVED_GAME, JSON.stringify(newGame));
+      setGame(newGame);
     } catch (reason) {
       setError(reason instanceof Error ? reason.message : "Error de conexión.");
     } finally { setLoading(false); }
@@ -55,10 +70,12 @@ export default function App() {
     try {
       const response = await fetch(`${API}/game/${game.id}/choose`, {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ option_id: option.id }),
+        body: JSON.stringify({ option_id: option.id, game }),
       });
       const body = await response.json();
       if (!response.ok) throw new Error(body.detail ?? "No se pudo registrar la decisión.");
+      if (body.status === "playing") localStorage.setItem(SAVED_GAME, JSON.stringify(body));
+      else localStorage.removeItem(SAVED_GAME);
       setGame(body);
     } catch (reason) { setError(reason instanceof Error ? reason.message : "Error de conexión."); }
     finally { setLoading(false); }
@@ -69,6 +86,11 @@ export default function App() {
       void choose(game.card.opciones[dragX < 0 ? 0 : 1]);
     }
     setStartX(null); setDragX(0);
+  };
+
+  const restartGame = () => {
+    localStorage.removeItem(SAVED_GAME);
+    setGame(null);
   };
 
   if (!game) return (
@@ -95,7 +117,7 @@ export default function App() {
         <h1>{game.status === "won" ? "Ascenso aprobado" : game.failure?.title}</h1>
         <p>{game.status === "won" ? "Completaste los 365 días sin perder el equilibrio. La junta te asciende a Gerente de Departamento." : game.failure?.message}</p>
         {game.status === "lost" && <aside><b>Lección para tu yo Humano</b><br />{game.failure?.lesson}</aside>}
-        <button onClick={() => setGame(null)}>Comenzar un nuevo año</button>
+        <button onClick={restartGame}>Comenzar un nuevo año</button>
       </div>
     </main>
   );
@@ -106,7 +128,7 @@ export default function App() {
       <header>
         <div className="brand">OFICINA <strong>360</strong></div>
         <div className="day">DÍA <b>{game.day}</b><span> / 365{game.daysPassed > 0 ? ` · +${game.daysPassed} días` : ""}</span></div>
-        <BackgroundMusic />
+        <BackgroundMusic onRestart={restartGame} />
       </header>
       <section className="stats" aria-label="Indicadores vitales">
         {PILLARS.map(([key, icon, label]) => <div className="stat" key={key}>

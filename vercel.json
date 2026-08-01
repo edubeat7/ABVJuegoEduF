@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "frontend/dist",
+  "functions": {
+    "api/**/*.mjs": {
+      "includeFiles": "Preguntas*.json"
+    }
+  },
+  "rewrites": [
+    { "source": "/game/start", "destination": "/api/game/start" },
+    { "source": "/game/:gameId/choose", "destination": "/api/game/:gameId/choose" },
+    { "source": "/health", "destination": "/api/health" }
+  ]
+}
