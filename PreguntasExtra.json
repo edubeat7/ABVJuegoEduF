@@ -2864,6 +2864,500 @@
               }
             }
           ]
+        },
+        {
+          "bloques_inesperados_positivos": {
+            "trimestre_1": [
+              {
+                "id": 121,
+                "titulo": "Bono Sorpresa por Desempeño",
+                "texto": "La junta directiva te otorga un bono extraordinario de fin de mes por tu gestión. ¿Lo destinas íntegramente a tu Fondo de Emergencia o te das un gusto personal?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Destinarlo al fondo de emergencia.",
+                    "efectos": {
+                      "Finanzas": 20,
+                      "Salud": 5
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Gastarlo en una cena y compras ejecutivas.",
+                    "efectos": {
+                      "Finanzas": 5,
+                      "Social": 12,
+                      "Salud": 8
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 122,
+                "titulo": "Premio Menor de Lotería",
+                "texto": "Ganas un premio menor en un sorteo local de $200. ¿Lo inviertes en un instrumento de rendimiento o celebras con tus colegas de trabajo?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Invertirlo en un fondo de rendimiento.",
+                    "efectos": {
+                      "Finanzas": 10,
+                      "Perfil": 5
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Pagar la ronda de celebración con tu equipo.",
+                    "efectos": {
+                      "Finanzas": 5,
+                      "Social": 8,
+                      "Perfil": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 123,
+                "titulo": "Propuesta de Nueva Relación Pareja",
+                "texto": "Conoces a alguien especial con quien inicias una relación sentimental. ¿Inviertes en la relación?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Aceptar las salidas y eventos de pareja.",
+                    "efectos": {
+                      "Finanzas": -15,
+                      "Salud": 15,
+                      "Social": 15
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Mantener citas de bajo costo y perfil reservado.",
+                    "efectos": {
+                      "Finanzas": -5,
+                      "Salud": 5,
+                      "Social": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 124,
+                "titulo": "Reembolso Médico a Tu Favor",
+                "texto": "El seguro aprueba un retroactivo de un trámite antiguo y te deposita un reembolso no esperado. ¿Lo usas para saldar deudas o para un viaje de fin de semana?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Saldar deudas pendientes de inmediato.",
+                    "efectos": {
+                      "Finanzas": 10,
+                      "Salud": 8
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Financiar una escapada de descanso fin de semana.",
+                    "efectos": {
+                      "Finanzas": -10,
+                      "Salud": 10,
+                      "Social": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 125,
+                "titulo": "Invitación a Red de VIP Execs",
+                "texto": "Un colega te invita a unirte a un club corporativo exclusivo. La suscripción tiene un costo, pero expande tu perfil institucional y contactos clave. ¿Aceptas la membresía?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Pagar la membresía VIP corporativa.",
+                    "efectos": {
+                      "Finanzas": -15,
+                      "Perfil": 20,
+                      "Social": 15
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Declinar educadamente para cuidar liquidez.",
+                    "efectos": {
+                      "Finanzas": 5,
+                      "Perfil": -5
+                    }
+                  }
+                ]
+              }
+            ],
+            "trimestre_2": [
+              {
+                "id": 126,
+                "titulo": "Descuento Exclusivo en Venta Nocturna",
+                "texto": "Una tienda de equipamiento tecnológico ofrece un 50% de descuento express a ejecutivos. ¿Aprovechas para renovar tus equipos de trabajo o mantienes tus ahorros intactos?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Comprar equipos a mitad de precio.",
+                    "efectos": {
+                      "Finanzas": -15,
+                      "Perfil": 15,
+                      "Salud": 5
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Ignorar la oferta y priorizar el ahorro.",
+                    "efectos": {
+                      "Finanzas": 10,
+                      "Perfil": 0
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 127,
+                "titulo": "Cobro de Honorarios de Proyecto Extra",
+                "texto": "Te pagan la totalidad de una consultoría freelance que habías realizado el mes pasado. ¿Recompensas tu esfuerzo con unas mini-vacaciones o reinviertes el capital?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Tomar mini-vacaciones de desconexión.",
+                    "efectos": {
+                      "Finanzas": -10,
+                      "Salud": 10,
+                      "Social": 8
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Reinvertir el capital en tu cuenta de fondos.",
+                    "efectos": {
+                      "Finanzas": 20,
+                      "Salud": -5
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 128,
+                "titulo": "Beca de Certificación Internacional",
+                "texto": "Tu institución te otorga una beca del 80% para un diplomado internacional, debiendo cubrir tú solo la diferencia. ¿Pagas la diferencia para potenciar tu perfil?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Pagar la cuota restante de la beca.",
+                    "efectos": {
+                      "Finanzas": -12,
+                      "Perfil": 22
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Rechazar por no disponer del saldo este mes.",
+                    "efectos": {
+                      "Finanzas": 5,
+                      "Perfil": -10
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 129,
+                "titulo": "Venta de Bien en Desuso",
+                "texto": "Logras vender un dispositivo o mueble antiguo por un precio superior al esperado. ¿Guardas el efectivo en el banco o inviertes en renovar tu vestuario profesional?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Depositar en tu cuenta de ahorros.",
+                    "efectos": {
+                      "Finanzas": 15,
+                      "Salud": 5
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Renovar tu vestuario para eventos de junta.",
+                    "efectos": {
+                      "Finanzas": -5,
+                      "Perfil": 12,
+                      "Social": 8
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 130,
+                "titulo": "Oportunidad de Inversión Semilla",
+                "texto": "Un contacto cercano te invita a sumarte como socio minoritario en un emprendimiento prometedor. Requiere un aporte inicial, ¿participas?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Realizar el aporte de capital inicial.",
+                    "efectos": {
+                      "Finanzas": -10,
+                      "Perfil": 15,
+                      "Social": 10
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Dejar pasar la oportunidad por prudencia.",
+                    "efectos": {
+                      "Finanzas": 5,
+                      "Perfil": -5
+                    }
+                  }
+                ]
+              }
+            ],
+            "trimestre_3": [
+              {
+                "id": 131,
+                "titulo": "Aumento Salarial Anticipado",
+                "texto": "Tu evaluación de medio año resulta sobresaliente y la dirección aprueba un aumento salarial inmediato. ¿Incrementas tu cuota mensual de ahorro o mejoras tu estilo de vida?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Aumentar automáticamente el ahorro automático.",
+                    "efectos": {
+                      "Finanzas": 22,
+                      "Salud": 5
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Elevar tu presupuesto mensual de esparcimiento.",
+                    "efectos": {
+                      "Finanzas": 5,
+                      "Salud": 10,
+                      "Social": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 132,
+                "titulo": "Devolución de Depósito de Garantía",
+                "texto": "Te liberan un depósito de garantía retenido de un contrato anterior. ¿Usas este capital sorpresa para iniciar un plan de salud integral privado o para compras?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Contratar un plan de salud preventiva integral.",
+                    "efectos": {
+                      "Finanzas": -10,
+                      "Salud": 22
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Integrar el dinero directo al presupuesto mensual.",
+                    "efectos": {
+                      "Finanzas": 10,
+                      "Salud": 0
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 133,
+                "titulo": "Premio a la Innovación Institucional",
+                "texto": "Ganas el primer lugar en un concurso interno de ideas operativas y recibes un bono en efectivo. ¿Celebras organizando un evento para tu área o ahorras todo?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Organizar una integración festiva con el equipo.",
+                    "efectos": {
+                      "Finanzas": 5,
+                      "Perfil": 10,
+                      "Social": 15
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Guardar el 100% en la cuenta de resguardo.",
+                    "efectos": {
+                      "Finanzas": 18,
+                      "Perfil": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 134,
+                "titulo": "Regalo de Viaje por Aniversario Laboral",
+                "texto": "La empresa te otorga un paquete de pasajes y hospedaje por tu trayectoria. Sin embargo, debes cubrir tus gastos diarios y comidas durante la estadía. ¿Aceptas viajar?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Aceptar el viaje asumiendo los viáticos.",
+                    "efectos": {
+                      "Finanzas": -12,
+                      "Salud": 20,
+                      "Social": 10
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Pedir el equivalente parcial en días de descanso en casa.",
+                    "efectos": {
+                      "Finanzas": 5,
+                      "Salud": 10
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 135,
+                "titulo": "Oportunidad de Mentorería Pagada",
+                "texto": "Una universidad te propone dictar un módulo corto de especialización muy bien remunerado fuera de tu horario. ¿Aceptas el reto comprometiendo horas de descanso?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Aceptar el dictado del módulo universitario.",
+                    "efectos": {
+                      "Finanzas": 10,
+                      "Perfil": 12,
+                      "Salud": -10
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Rechazar para mantener tu tiempo de descanso.",
+                    "efectos": {
+                      "Finanzas": 0,
+                      "Salud": 12,
+                      "Perfil": -5
+                    }
+                  }
+                ]
+              }
+            ],
+            "trimestre_4": [
+              {
+                "id": 136,
+                "titulo": "Utilidades / Gratuidad Sobresaliente",
+                "texto": "Las utilidades de fin de año superan las proyecciones iniciales y recibes un dividendo alto. ¿Inviertes la mayoría en el fondo anual o compras regalos de alta gama?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Capitalizar la mayoría en inversiones de largo plazo.",
+                    "efectos": {
+                      "Finanzas": 20,
+                      "Salud": 5
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Usar el dinero para compras y regalos festivos.",
+                    "efectos": {
+                      "Finanzas": -10,
+                      "Social": 15,
+                      "Salud": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 137,
+                "titulo": "Membresía Gimnasio / Spa Regalada",
+                "texto": "Te regalan un pase semestral corporativo para un centro de bienestar VIP, pero debes pagar la matrícula de inscripción inicial. ¿Pagas la matrícula?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Pagar la matrícula e iniciar el programa VIP.",
+                    "efectos": {
+                      "Finanzas": -10,
+                      "Salud": 20,
+                      "Perfil": 5
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Cedérselo a otra persona para no gastar nada.",
+                    "efectos": {
+                      "Finanzas": 0,
+                      "Social": 10,
+                      "Salud": 0
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 138,
+                "titulo": "Reconocimiento e Invitación a Gala Directiva",
+                "texto": "Te seleccionan como ejecutivo destacado y te invitan a la gala anual de la industria. Requiere alquilar vestuario formal de gala y transporte ejecutivo. ¿Asistes?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Invertir en alquiler de traje y transporte de gala.",
+                    "efectos": {
+                      "Finanzas": -15,
+                      "Perfil": 22,
+                      "Social": 18
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Declinar la asistencia por costos de preparación.",
+                    "efectos": {
+                      "Finanzas": 5,
+                      "Perfil": -12,
+                      "Social": -10
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 139,
+                "titulo": "Adjudicación de Crédito a Tasa Preferencial",
+                "texto": "Tu entidad bancaria te aprueba un crédito personal pre-aprobado a una tasa muy baja por buen historial. ¿Aprovechas para consolidar inversiones o lo ignoras?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Tomar el crédito para inversiones productivas.",
+                    "efectos": {
+                      "Finanzas": 15,
+                      "Perfil": 10
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Rechazar la opción para mantenerte libre de deudas.",
+                    "efectos": {
+                      "Finanzas": 5,
+                      "Salud": 10
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 140,
+                "titulo": "Cierre Estratégico Exitoso del Año",
+                "texto": "Tu plan de cierre anual es elogiado por la presidencia y te entregan un bono de productividad express. ¿Reconstruyes tus fondos de previsión para el año nuevo o organizas un viaje?",
+                "opciones": [
+                  {
+                    "id": "Izquierda",
+                    "accion": "Blindar el Fondo de Emergencia para el próximo año.",
+                    "efectos": {
+                      "Finanzas": 22,
+                      "Salud": 10,
+                      "Perfil": 5
+                    }
+                  },
+                  {
+                    "id": "Derecha",
+                    "accion": "Financiar una fiesta y viaje de año nuevo inolvidable.",
+                    "efectos": {
+                      "Finanzas": -12,
+                      "Social": 15,
+                      "Salud": 12
+                    }
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     }
