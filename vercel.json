@@ -3,12 +3,13 @@
   "outputDirectory": "frontend/dist",
   "functions": {
     "api/**/*.mjs": {
-      "includeFiles": "Preguntas*.json"
+      "includeFiles": ["Preguntas*.json", "Consejos.json"]
     }
   },
   "rewrites": [
     { "source": "/game/start", "destination": "/api/game/start" },
     { "source": "/game/:gameId/choose", "destination": "/api/game/:gameId/choose" },
+    { "source": "/tips/random", "destination": "/api/tips/random" },
     { "source": "/health", "destination": "/api/health" }
   ]
 }

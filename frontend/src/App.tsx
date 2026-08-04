@@ -7,6 +7,7 @@ type Gender = "hombre" | "mujer";
 type Effects = Record<string, number | boolean>;
 type Option = { id: string; accion: string; efectos: Effects };
 type Card = { personaje: string; texto: string; tipo: string; inesperado: boolean; opciones: Option[] };
+type Tip = { id: string; tema: string; texto: string };
 type Game = {
   id: string; day: number; daysPassed: number; playerGender: Gender; stats: Record<string, number>; status: "playing" | "lost" | "won";
   message: string; card?: Card; failure?: { title: string; message: string; lesson: string };
@@ -35,6 +36,8 @@ export default function App() {
   const [error, setError] = useState("");
   const [dragX, setDragX] = useState(0);
   const [startX, setStartX] = useState<number | null>(null);
+  const [tip, setTip] = useState<Tip | null>(null);
+  const [lossTip, setLossTip] = useState<Tip | null>(null);
 
   useEffect(() => {
     try {
@@ -47,6 +50,27 @@ export default function App() {
       localStorage.removeItem(SAVED_GAME);
     }
   }, []);
+
+  useEffect(() => {
+    if (game?.status !== "lost") {
+      setLossTip(null);
+      return;
+    }
+    void fetch(`${API}/tips/random`)
+      .then((response) => response.ok ? response.json() as Promise<Tip> : Promise.reject())
+      .then(setLossTip)
+      .catch(() => setLossTip(null));
+  }, [game?.id, game?.status]);
+
+  const showTip = async () => {
+    try {
+      const response = await fetch(`${API}/tips/random`);
+      if (!response.ok) throw new Error();
+      setTip(await response.json() as Tip);
+    } catch {
+      setError("No se pudo cargar un consejo.");
+    }
+  };
 
   const start = async (gender: Gender) => {
     setLoading(true); setError("");
@@ -90,6 +114,8 @@ export default function App() {
 
   const restartGame = () => {
     localStorage.removeItem(SAVED_GAME);
+    setTip(null);
+    setLossTip(null);
     setGame(null);
   };
 
@@ -116,7 +142,10 @@ export default function App() {
         <span className="ending-icon">{game.status === "won" ? "★" : "!"}</span>
         <h1>{game.status === "won" ? "Ascenso aprobado" : game.failure?.title}</h1>
         <p>{game.status === "won" ? "Completaste los 365 días sin perder el equilibrio. La junta te asciende a Gerente de Departamento." : game.failure?.message}</p>
-        {game.status === "lost" && <aside><b>Lección para tu yo Humano</b><br />{game.failure?.lesson}</aside>}
+        {game.status === "lost" && <>
+          <aside><b>Lección para tu yo Humano</b><br />{game.failure?.lesson}</aside>
+          {lossTip && <aside className="tip-on-loss"><b>Consejo para mejorar · {lossTip.tema}</b><br />{lossTip.texto}</aside>}
+        </>}
         <button onClick={restartGame}>Comenzar un nuevo año</button>
       </div>
     </main>
@@ -128,7 +157,7 @@ export default function App() {
       <header>
         <div className="brand">OFICINA <strong>360</strong></div>
         <div className="day">DÍA <b>{game.day}</b><span> / 365{game.daysPassed > 0 ? ` · +${game.daysPassed} días` : ""}</span></div>
-        <BackgroundMusic onRestart={restartGame} />
+        <BackgroundMusic onRestart={restartGame} onShowTip={() => void showTip()} />
       </header>
       <section className="stats" aria-label="Indicadores vitales">
         {PILLARS.map(([key, icon, label]) => <div className="stat" key={key}>
@@ -159,6 +188,14 @@ export default function App() {
         </button>)}
       </section>
       {error && <p className="error">{error}</p>}
+      {tip && <div className="tip-dialog-backdrop" role="presentation" onClick={() => setTip(null)}>
+        <section className="tip-dialog" role="dialog" aria-modal="true" aria-labelledby="tip-title" onClick={(event) => event.stopPropagation()}>
+          <span>💡 CONSEJO</span>
+          <h2 id="tip-title">{tip.tema}</h2>
+          <p>{tip.texto}</p>
+          <button type="button" onClick={() => setTip(null)}>Cerrar</button>
+        </section>
+      </div>}
     </main>
   );
 }

@@ -3,6 +3,7 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { GameEngine } from "./gameEngine.mjs";
+import { getRandomTip } from "./tipsLoader.mjs";
 
 const root = join(fileURLToPath(new URL("..", import.meta.url)));
 const dist = join(root, "frontend", "dist");
@@ -18,6 +19,13 @@ app.use((_, response, next) => {
 });
 
 app.get("/health", (_, response) => response.json({ status: "ok" }));
+app.get("/tips/random", (_, response) => {
+  try {
+    response.json(getRandomTip());
+  } catch (error) {
+    response.status(500).json({ detail: error.message });
+  }
+});
 app.post("/game/start", (request, response) => response.json(engine.start(request.body?.gender)));
 app.post("/game/:gameId/choose", (request, response) => {
   try {

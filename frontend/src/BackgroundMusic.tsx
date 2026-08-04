@@ -3,9 +3,9 @@ import { useEffect, useRef, useState } from "react";
 const TRACKS = ["/Musica/oficina-01.mp3", "/Musica/oficina-02.mp3", "/Musica/oficina-03.mp3"];
 const VOLUME = 0.14;
 
-type BackgroundMusicProps = { onRestart: () => void };
+type BackgroundMusicProps = { onRestart: () => void; onShowTip: () => void };
 
-export default function BackgroundMusic({ onRestart }: BackgroundMusicProps) {
+export default function BackgroundMusic({ onRestart, onShowTip }: BackgroundMusicProps) {
   const audio = useRef<HTMLAudioElement>(null);
   const [track, setTrack] = useState(() => Math.floor(Math.random() * TRACKS.length));
   const [muted, setMuted] = useState(false);
@@ -37,6 +37,9 @@ export default function BackgroundMusic({ onRestart }: BackgroundMusicProps) {
         {menuOpen && <div className="options-menu">
           <button type="button" aria-pressed={muted} onClick={() => setMuted((current) => !current)}>
             {muted ? "♫ Activar música" : "♪ Silenciar música"}
+          </button>
+          <button type="button" onClick={() => { setMenuOpen(false); onShowTip(); }}>
+            💡 Consejos
           </button>
           <button className="restart-button" type="button" onClick={onRestart}>↻ Reiniciar partida</button>
         </div>}
